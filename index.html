@@ -2,7 +2,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="indexStylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet1.css">
+    
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@200;600;700&display=swap" rel="stylesheet">
+    
+    
     <title>
         Kaleigh Sutula, front-end developer
     </title>
@@ -10,19 +17,31 @@
 
 <header>
     <nav id="all-nav">
-    <a href="pages/index.html">Home</a>
-    <a href="pages/mywork.html">My Work</a>
-    <a href="pages/experience.html">Experience</a>
-    <a href="pages/contact.html">Contact</a>        
+    <a class="nav" href="/index.html">Home</a>
+    <a class="nav" href="pages/mywork.html">My Work</a>
+    <a class="nav" href="pages/experience.html">Experience</a>
+    <a class="nav" href="pages/contact.html">Contact</a>        
     </nav>
 </header>
 
 <body>
+    <h1 id="greetingreveal">
+        <span></span>
+        <div class="message">
+          <div class="greeting1">Hola!</div>
+          <div class="greeting2">Bonjour!</div>
+          <div class="greeting3">Hello!</div>
+          <div class="greeting4">Ciao!</div>
+        </div>
+      </h1>
+      <h1 id="introduction">I'm Kaleigh: front-end developer, teacher, and singer.</h1>
+    <img id="headshot" src="./assets/ksheadshot.jpg">
     <div id="bio">
-    I love learning new tech skills, making striking websites, studying foreign languages, and teaching people about things they didn't know they were interested in.
-    As a teacher of 5 years, I am passionate about collaborative learning, brainstorming new methods, and being a lifelong student. Teaching has also made me adaptable, strengthened my problem-solving, and made me an excellent time manager. I am enthusiastic about building professional relationships through exchanging knowledge.
-    As a musician for many more years, I enjoy singing with friends in professional and casual settings as often as I can. I love to discover new video games (RPGs especially), spend as much time outside as possible, and strengthening my skills in other languages.
-    I hope to soon accept a role as a junior software developer and would love to talk more about any opportunity to do that.
+        <p>I love learning new tech skills, making striking websites, improving my foreign language proficiency, and teaching people about things they didn't know they were interested in.</p>
+   
+        <p>As a teacher of 5 years, I am passionate about collaborative learning, brainstorming new methods, and being a lifelong student. Teaching has also made me adaptable, strengthened my problem-solving, and made me an excellent time manager. I am enthusiastic about building professional relationships through exchanging knowledge.</p>
+        <p>As a musician for many more years, I enjoy singing with friends in professional and casual settings as often as I can. I love to discover new video games (RPGs especially), spend as much time outside as possible, and cooking up recipes from different cultures.</p>
+        <p class="important">I hope to soon accept a role as a junior software developer and would love to talk more about any opportunity to do that.</p>
     </div>
 
 

@@ -1,0 +1,211 @@
+html{
+    background-color: #130114;
+    font-size: 20px;
+}
+
+body {
+color: white;
+font-family: 'Libre Baskerville', sans-serif;
+width: 100vw;
+}
+p{
+    padding-left: 20px;
+}
+
+a.nav {
+    font-family: 'Montserrat', serif;
+    font-weight: 100;
+    color: #AFA2FF;
+    font-size: 25px;
+    text-decoration: none;
+    padding-right: 2%;
+
+
+    
+}
+a.nav:visited {
+    color: #E3D7FF;
+}
+
+a.nav:hover{
+    color: #87B6A7;
+}
+
+#all-nav{
+    position: fixed;
+    height: 50px;
+    text-align: right;
+    background-color: #5E6472;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 50px;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    line-height: 40px;
+}
+
+.important{
+    color: #87b6a7;
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+
+}
+
+
+
+/* below this line is styles specific to index page */
+
+
+#headshot{
+    position: relative;
+    width: 250px;
+    float: right;
+    padding-right: 25px;
+    padding: 20px;
+}
+
+#introduction{
+    text-align: right;
+    padding-right: 3%;
+    padding-top: 3%;
+    font-size: 1.8rem;
+}
+
+#greetingreveal {
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 3rem;
+    line-height: 1.5;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+    top: 40px;
+  }
+  
+h1 span {
+        font-size: 40px;
+        margin-left: 180px;
+    }
+  
+  .message {
+    background-color: #5E6472;
+    color: #87b6a7;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0rem;
+    top: .5rem;
+    animation: openclose 7s ease-in-out infinite;
+    text-transform: uppercase;
+  }
+  
+  
+  @keyframes openclose {
+    0% {
+        top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 380px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 380px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.3rem;
+    
+      
+    }
+    48% {
+      top: -4.3rem;
+      width: 380px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 380px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 380px;
+    }
+    95% {
+      top: -9rem;
+      width: 380px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+
+
+
+
+
+
+
+/*
+#greeting1 {
+    display: inline-block;
+    content: "Hello! Bonjour!";
+    animation: greeting1 1 3s;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+
+
+@keyframes greeting1 {
+    from{
+        margin-left: -50%;
+    
+    }
+
+    to{
+        margin-right: %;
+    }}
+    */
+
+    
+
+
+
+
+
