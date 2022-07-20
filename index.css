@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  position: relative;
   color: white;
   font-family: 'Libre Baskerville', sans-serif;
   width: 100vw;
@@ -35,7 +36,7 @@ a.nav:hover {
 }
 
 #all-nav {
-  position: fixed;
+  position: static;
   height: 50px;
   text-align: right;
   background-color: #5E6472;

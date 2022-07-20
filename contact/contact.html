@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="indexStylesheet.css">
+    <title>
+        Kaleigh Sutula, front-end developer
+    </title>
+</head>
+
+
+
+<body>
+    <header>
+        <nav id="all-nav">
+            <a href="/index.html">Home</a>
+            <a href="/pages/mywork.html">My Work</a>
+            <a href="/pages/experience.html">Experience</a>
+            <a href="/pages/contact.html">Contact</a>
+        </nav>
+    </header>
+    <h2>Contact Me
+    </h2>
+
+
+    <form action="https://functionsite.azurewebsites.net/api/ContactForm?code=MfEKY_yBSvRN-8NKD-G0Vkp27i1a1RqgKku4vJsvAOgUAzFuQ_hO3A==" method="POST" id="contact-form">
+        <div>
+            <label for="fullname">Full Name: </label>
+            <input type="text" name="fullname" id="fullname" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <textarea name="message" placeholder="Enter message here" required></textarea>
+        </div>
+        <button id="sendEmail">Submit</button>
+    </form>
+
+
+
+
+    <div id="social-footer">
+        <!-- not sure whether to use IMG or ICONS here -->
+        <!--vertically aligned, bottom left corner-->
+        <a href="https://twitter.com/kmsutula"><img src="assets/twitter.png" class="socialicon"></a>
+        <a href="https://www.linkedin.com/in/kaleighsutula"><img src="assets/linkedin.png" class="socialicon"></a>
+        <a href="https://github.com/KmSutula"><img src="assets/github.png" class="socialicon"></a>
+        <a href="https://codepen.io/ksutula"><img src="assets/codepen.png" class="socialicon"></a>
+        <a href="mailto:kaleighsutula@gmail.com"><img src="assets/email.png" class="socialicon"></a>
+    </div>
+
+</body>
+
+
+<footer>
+    © Kaleigh Sutula All Rights Reserved. 2022
+</footer>
+
+</html>
