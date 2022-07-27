@@ -13,18 +13,46 @@ async function postData(url = '', data = {}) {
     referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
     body: JSON.stringify(data) // body data type must match "Content-Type" header
   });
-  return response.json(); // parses JSON response into native JavaScript objects
+  return response; // parses JSON response into native JavaScript objects
 }
+//send email
+const submitButton = document.getElementById('sendButton');
+const inputs = document.querySelectorAll('input');
+const textArea = document.querySelector('textarea');
+const url = 'https://functionsite.azurewebsites.net/api/ContactForm?code=MfEKY_yBSvRN-8NKD-G0Vkp27i1a1RqgKku4vJsvAOgUAzFuQ_hO3A==';
+const submitDiv = document.createElement('div');
+const acceptedMessage = document.getElementById('acceptedText');
 
-postData('https://functionsite.azurewebsites.net/api/ContactForm?code=MfEKY_yBSvRN-8NKD-G0Vkp27i1a1RqgKku4vJsvAOgUAzFuQ_hO3A==', { answer: 42 })
-  .then(data => {
-    console.log(data); // JSON data parsed by `data.json()` call
-  });
 
-const submitButton = document.getElementById('sendEmail');
 
-submitButton.addEventListener('click', () => {
-  postData()
+submitButton.addEventListener('click', async () => {
+  inputs.forEach((element) => {
+    element.disabled = true;
+  })
+  textArea.disabled = true;
+  const data = {
+    name: inputs[0].value,
+    replyEmail: inputs[1].value,
+    message: textArea.value
+  }
+  await postData(url, data);
+  acceptedMessage.innerHTML = "Thank you, your message was submitted!";
+  acceptedMessage.classList.add('fade-out');
 })
 
 
+//open/close social footer
+const open = document.getElementById('open')
+const close = document.getElementById('close')
+const socialfooter = document.getElementById('social-footer')
+
+open.addEventListener('click', () => socialfooter.classList.add('show-nav'));
+
+close.addEventListener('click', () => socialfooter.classList.remove('show-nav'))
+
+
+
+const message = document.getElementById('acceptedText')
+
+
+//acceptedText.innerHTML = "Thank you, your message was submitted!"

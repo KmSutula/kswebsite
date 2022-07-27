@@ -1,0 +1,31 @@
+.slideIn {
+   a {
+      overflow: hidden;
+      padding: 0 4px;
+      height: 1em;
+      color: $brand-tertiary;
+
+      span {
+         position: relative;
+         display: inline-block;
+         @include transition(all 0.3s);
+
+         &:before {
+            position: absolute;
+            top: 100%;
+            content: attr(data-hover);
+            font-weight: 700;
+            color: $brand-primary;
+            @include transform(translate3d(0,0,0));
+         }
+
+      }
+
+      &:hover,
+      &:focus {
+         span {
+            @include transform(translateY(-100%));
+         }
+      }
+   }
+}
