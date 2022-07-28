@@ -209,6 +209,11 @@ textarea {
     outline: none;
 }
 
+textarea::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
 input {
     background-color: transparent;
     border: 0;
@@ -253,6 +258,7 @@ label {
     -moz-animation: fadeOut 6s;
     -o-animation: fadeOut 6s;
     -ms-animation: fadeOut 6s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeOut {

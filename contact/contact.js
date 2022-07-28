@@ -25,19 +25,26 @@ const acceptedMessage = document.getElementById('acceptedText');
 
 
 
+
 submitButton.addEventListener('click', async () => {
   inputs.forEach((element) => {
-    element.disabled = true;
+    if (inputs.value) {
+      element.disabled = true;
+    }
   })
-  textArea.disabled = true;
+  if (textArea.value) { textArea.disabled = true };
+
+
   const data = {
     name: inputs[0].value,
     replyEmail: inputs[1].value,
     message: textArea.value
   }
   await postData(url, data);
+
   acceptedMessage.innerHTML = "Thank you, your message was submitted!";
   acceptedMessage.classList.add('fade-out');
+
 })
 
 
