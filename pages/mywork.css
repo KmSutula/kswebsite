@@ -1,0 +1,87 @@
+:root {
+  --dark-purple: #130114;
+  --lighter-purple: #afa2ff;
+  --lightest-purple: #e3d7ff;
+  --grey: #5e6472;
+  --white: #fff;
+  --teal: #87b6a7;
+}
+
+body {
+  height: 100%;
+}
+
+#worksamplecontainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+}
+.worksample {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+}
+
+.worksample.active {
+  opacity: 1;
+}
+
+img.sample {
+  width: calc(50% - 100px);
+  transition: all 0.5s ease-in-out;
+}
+
+img.sample:hover {
+  transform-origin: center left;
+  transform: scale(2);
+  transition-timing-function: ease-in-out;
+}
+
+div.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(50% - 100px);
+  background-color: var(--grey);
+  transition: all 0.5s ease-in-out;
+}
+
+div.description:hover {
+  transform-origin: center right;
+  transform: scale(2);
+  transition-timing-function: ease-in-out;
+}
+
+.arrow {
+  position: absolute;
+  background-color: transparent;
+  top: calc(50%- 50px);
+  width: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow > img:active {
+  transition: 0.2s;
+  transform: scale(0.6);
+}
+
+.arrow img {
+  width: 100%;
+}
+
+#left-arrow {
+  right: calc(100vw - 100px);
+  filter: invert(81%) sepia(28%) saturate(468%) hue-rotate(207deg)
+    brightness(102%) contrast(101%);
+}
+
+#right-arrow {
+  left: calc(100vw - 100px);
+  filter: invert(81%) sepia(28%) saturate(468%) hue-rotate(207deg)
+    brightness(102%) contrast(101%);
+}

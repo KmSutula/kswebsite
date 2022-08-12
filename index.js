@@ -1,10 +1,29 @@
+const openFooter = document.getElementById("open");
+const closeFooter = document.getElementById("close");
+const socialFooter = document.getElementById("social-footer");
 
+openFooter.addEventListener("click", () =>
+  socialFooter.classList.add("show-nav")
+);
 
+closeFooter.addEventListener("click", () =>
+  socialFooter.classList.remove("show-nav")
+);
 
-const open = document.getElementById('open')
-const close = document.getElementById('close')
-const socialfooter = document.getElementById('social-footer')
+const blockOverlay = document.querySelectorAll(".overlay");
 
-open.addEventListener('click', () => socialfooter.classList.add('show-nav'))
+blockOverlay.forEach((block) => {
+  block.addEventListener("mouseenter", () => {
+    block.classList.contains("overlay-active")
+      ? block.classList.remove("overlay-active")
+      : block.classList.add("overlay-active");
+  });
+});
 
-close.addEventListener('click', () => socialfooter.classList.remove('show-nav'))
+blockOverlay.forEach((block) => {
+  block.addEventListener("mouseleave", () => {
+    block.classList.contains("overlay-active")
+      ? block.classList.remove("overlay-active")
+      : block.classList.add("overlay-active");
+  });
+});

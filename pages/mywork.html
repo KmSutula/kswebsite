@@ -4,7 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="indexStylesheet.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./mywork.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@200;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/df14e517a5.js" crossorigin="anonymous"></script>
     <title>
         K.Sutula - My Work
     </title>
@@ -14,31 +22,65 @@
 <body>
     <header>
         <nav id="all-nav">
-            <a href="/index.html">Home</a>
-            <a href="/pages/mywork.html">My Work</a>
-            <a href="/pages/experience.html">Experience</a>
-            <a href="/pages/contact.html">Contact</a>
+          <img id="logo" src="../assets/logosmall.png" />
+          <a class="nav" href="/index.html">Home</a>
+          <a class="nav" href="pages/mywork.html">My Work</a>
+          <a class="nav" href="pages/experience.html">Experience</a>
+          <a class="nav" href="pages/contact.html">Contact</a>
         </nav>
-    </header>
+      </header>
 
 
     <h2>My Work</h2>
+    <button class="arrow" id="left-arrow"></button>  
+    <div id="worksamplecontainer">
+        
+        <button class="arrow" id="left-arrow"><img src="../assets/leftarrow.png"/></button>
+        <div class="worksample active">
+            <img src="../assets/websiteexample.png" class="sample" id="sample1">
+            <div class="description" id="description1">
+                <h2>Title of Project</h2><p>description of project</p></div>
+        </div>
+        <div class="worksample"></div>
+        <div class="worksample"></div>
+        <button class="arrow" id="right-arrow"><img src="../assets/rightarrow.png"></button>
+
+      </div>
+      
+
+
+      <!-- slide out social media footer--> 
 
     <div id="social-footer">
-        <!-- not sure whether to use IMG or ICONS here -->
         <!--vertically aligned, bottom left corner-->
-        <twitter><a href="https://twitter.com/kmsutula"></a>
-            <linkedin><a href="www.linkedin.com/in/kaleighsutula"></a>
-                <github><a href="https://github.com/KmSutula"></a>
-                    <codepen><a href="https://codepen.io/ksutula"></a>
-                        <email> <a href="mailto:kaleighsutula@gmail.com"></a>
-    </div>
-
+        <a href="https://twitter.com/kmsutula"
+          ><img src="../assets/twitter.png" class="socialicon"
+        /></a>
+  
+        <a href=" https://www.linkedin.com/in/kaleighsutula"
+          ><img src="../assets/linkedin.png" class="socialicon"
+        /></a>
+        <a href=" https://github.com/KmSutula"
+          ><img src="../assets/github.png" class="socialicon"
+        /></a>
+  
+        <a href=" https://codepen.io/ksutula"
+          ><img src="../assets/codepen.png" class="socialicon"
+        /></a>
+  
+        <a href=" mailto:kaleighsutula@gmail.com"
+          ><img src="../assets/email.png" class="socialicon"
+        /></a>
+      </div>
+      <div class="circle" id="social-circle">
+        <button id="open"><img src="../assets/open-arrow.png" /></button>
+        <button id="close"><img src="../assets/x.png" /></button>
+      </div>
+      <script src="../index.js"></script>
+      <script src="./mywork.js"></script>
+    </body>
 </body>
 
 
-<footer>
-    © Kaleigh Sutula All Rights Reserved. 2022
-</footer>
 
 </html>
