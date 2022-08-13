@@ -1,21 +1,26 @@
 :root {
-  --dark-purple: #130114;
-  --lighter-purple: #afa2ff;
-  --lightest-purple: #e3d7ff;
-  --grey: #5e6472;
+  --navy: #001d3d;
+  --light-blue: #6e7dab;
+  --lightest-yellow: #efecca;
+  --blue: #1b4965;
   --white: #fff;
-  --teal: #87b6a7;
+  --mid-yellow: #ffd07b;
+  --goldenrod: #b1740f;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
   font-size: 20px;
-  color: var(--lightest-purple);
+  color: var(--lightest-yellow);
   box-sizing: border-box;
 }
 
 body {
-  background-color: var(--dark-purple);
-  font-family: "Libre Baskerville", sans-serif;
+  background-color: var(--navy);
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   height: 100vh;
 }
@@ -23,20 +28,20 @@ body {
 a.nav {
   font-family: "Montserrat", serif;
   font-weight: 100;
-  color: var(--lighter-purple);
+  color: var(--white);
   font-size: 25px;
   text-decoration: none;
   padding-right: 2%;
-  margin: 3px;
+  margin: 0px 3px 0px 3px;
 }
 
 a.nav:visited {
-  color: var(--lightest-purple);
+  color: var(--light-blue);
   filter: none;
 }
 
 a.nav:hover {
-  color: var(--lighter-purple);
+  color: var(--mid-yellow);
   filter: none;
 }
 
@@ -45,13 +50,15 @@ a.nav:hover {
   align-content: center;
   justify-content: right;
   height: 50px;
-  background-color: var(--grey);
+  background-color: var(--blue);
   line-height: 50px;
   z-index: 2;
+  border-bottom: 4px solid var(--goldenrod);
 }
-#logo {
+span {
   padding: 0px 7px;
   margin-right: auto;
+  font-size: 35px;
 }
 
 /*footer {
@@ -64,15 +71,15 @@ a.nav:hover {
 }*/
 
 .important {
-  color: #87b6a7;
+  color: var(--mid-yellow);
   font-family: "Montserrat";
   font-size: 1.2rem;
 }
 
 img.socialicon {
   max-height: 45px;
-  filter: invert(4%) sepia(24%) saturate(7157%) hue-rotate(279deg)
-    brightness(80%) contrast(103%);
+  filter: invert(8%) sepia(32%) saturate(6027%) hue-rotate(198deg)
+    brightness(92%) contrast(103%);
 }
 
 #social-footer {
@@ -87,7 +94,7 @@ img.socialicon {
   height: 300px;
   width: 80px;
   left: -100px;
-  background-color: var(--teal);
+  background-color: var(--mid-yellow);
   border-top-right-radius: 10% 10px;
 }
 
@@ -117,7 +124,7 @@ div.circle {
   left: -20px;
   height: 100px;
   width: 100px;
-  background-color: var(--lightest-purple);
+  background-color: var(--lightest-yellow);
   z-index: 1;
   border-radius: 50%;
   cursor: pointer;
@@ -145,23 +152,22 @@ div.circle {
   left: 60%;
   transform: rotate(90deg);
   transform-origin: top left;
-  filter: invert(4%) sepia(24%) saturate(7157%) hue-rotate(279deg)
-    brightness(80%) contrast(103%);
+  filter: invert(8%) sepia(32%) saturate(6027%) hue-rotate(198deg)
+    brightness(92%) contrast(103%);
 }
 
 .circle button#open {
   left: 35%;
   bottom: 65%;
-  filter: invert(4%) sepia(24%) saturate(7157%) hue-rotate(279deg)
-    brightness(80%) contrast(103%);
+  filter: invert(8%) sepia(32%) saturate(6027%) hue-rotate(198deg)
+    brightness(92%) contrast(103%);
 }
 
 /* below this line is styles specific to index page */
 
 #body-square {
   margin: auto;
-  width: 70vw;
-  padding: 20px 100px;
+  max-width: 80vw;
 }
 
 #headshot {
@@ -177,7 +183,8 @@ div.circle {
   padding-right: 3%;
   padding-top: 3%;
   font-size: 1.8rem;
-  color: var(--lighter-purple);
+  color: var(--light-blue);
+  max-width: 80vw;
 }
 
 #greetingreveal {
@@ -198,8 +205,8 @@ h1 span {
 }
 
 .message {
-  background-color: var(--grey);
-  color: var(--teal);
+  background-color: var(--blue);
+  color: var(--mid-yellow);
   display: block;
   overflow: hidden;
   position: absolute;
@@ -303,17 +310,19 @@ h1 span {
   height: 200px;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .blocks {
   position: relative;
   width: 30%;
   height: 150px;
-  background-color: var(--grey);
-  color: var(--lightest-purple);
+  background-color: var(--blue);
+  color: var(--lightest-yellow);
   text-align: center;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
 }
 
 .blocks p {
@@ -331,16 +340,15 @@ h1 span {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(175, 150, 255, 0.3);
+  border-radius: 10px;
+  background-color: rgba(110, 125, 171, 0.4);
 }
-
-/*
-#greeting1 {
-    display: inline-block;
-    content: "Hello! Bonjour!";
-    animation: greeting1 1 3s;
-    animation-fill-mode: forwards;
-
+.socialblocklink {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--lightest-yellow);
+  width: 100%;
+  height: 100%;
 }
 
 
