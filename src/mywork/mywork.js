@@ -20,6 +20,7 @@ const leftButton = document.getElementById("left-arrow");
 //     });
 //   }
 let activeSample = 0;
+workSamps[activeSample].classList.add("active");
 
 rightButton.addEventListener("click", () => {
   activeSample++;

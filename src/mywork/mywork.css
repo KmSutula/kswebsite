@@ -1,14 +1,27 @@
 :root {
-  --dark-purple: #130114;
-  --lighter-purple: #afa2ff;
-  --lightest-purple: #e3d7ff;
-  --grey: #5e6472;
+  --dark-purple: #001d3d;
+  --lighter-purple: #6e7dab;
+  --lightest-purple: #efecca;
+  --grey: #1b4965;
   --white: #fff;
-  --teal: #87b6a7;
+  --teal: #ffd07b;
 }
 
 body {
   height: 100%;
+}
+
+h1 {
+  font-family: "Montserrat", serif;
+  font-weight: 200;
+  font-size: 3em;
+  margin-left: auto;
+}
+
+span {
+  padding: 0px 7px;
+  margin-right: auto;
+  font-size: 38px;
 }
 
 #worksamplecontainer {
@@ -19,41 +32,48 @@ body {
   height: 80vh;
   width: 100vw;
 }
+
 .worksample {
-  display: flex;
+  max-height: 426.56px;
+  max-width: calc(100vw - 200px);
+  display: none;
   justify-content: center;
   opacity: 0;
-  visibility: none;
 }
 
 .worksample.active {
+  display: flex;
   opacity: 1;
 }
 
 img.sample {
-  width: calc(50% - 100px);
+  width: auto;
+  min-width: 0;
+  max-width: 645px;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 img.sample:hover {
   transform-origin: center left;
-  transform: scale(2);
+  transform: scale(1.5);
   transition-timing-function: ease-in-out;
 }
 
 div.description {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: calc(50% - 100px);
+  justify-content: flex-start;
   background-color: var(--grey);
   transition: all 0.5s ease-in-out;
+  padding: 20px;
+  max-width: 645px;
+  overflow: hidden;
 }
 
 div.description:hover {
   transform-origin: center right;
-  transform: scale(2);
+  transform: scale(1.5);
   transition-timing-function: ease-in-out;
 }
 
@@ -77,12 +97,12 @@ div.description:hover {
 
 #left-arrow {
   right: calc(100vw - 100px);
-  filter: invert(81%) sepia(28%) saturate(468%) hue-rotate(207deg)
-    brightness(102%) contrast(101%);
+  filter: invert(60%) sepia(51%) saturate(7189%) hue-rotate(23deg)
+    brightness(94%) contrast(88%);
 }
 
 #right-arrow {
   left: calc(100vw - 100px);
-  filter: invert(81%) sepia(28%) saturate(468%) hue-rotate(207deg)
-    brightness(102%) contrast(101%);
+  filter: invert(60%) sepia(51%) saturate(7189%) hue-rotate(23deg)
+    brightness(94%) contrast(88%);
 }
