@@ -27,3 +27,12 @@ blockOverlay.forEach((block) => {
       : block.classList.add("overlay-active");
   });
 });
+
+const menuButton = document.getElementById("menulines");
+const navMenu = document.getElementById("nav-menu");
+const hamburger = document.getElementById("hamburger");
+
+menuButton.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
