@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../index.css">
-    <link rel="stylesheet" href="../experience.css">
+    <link rel="stylesheet" href="./experience.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@200;600;700&display=swap"
       rel="stylesheet"
@@ -18,48 +18,52 @@
 <body>
     <header>
       <nav id="all-nav">
-        <span>KALEIGH SUTULA</span>
-        <a class="nav" href="/index.html">Home</a>
-        <a class="nav" href="pages/mywork.html">My Work</a>
-        <a class="nav" href="pages/experience.html">Experience</a>
-        <a class="nav" href="pages/contact.html">Contact</a>
+        <span class="name">KALEIGH SUTULA</span>
+      <button id="menulines"><img src="../assets/menu-pngrepo-com.png" id="hamburger"></button>
+      <div id="nav-menu">
+     <a class="nav" href="../index.html">Home</a><span class="line">|</span>
+       <a class="nav" href="../mywork/mywork.html">My Work</a><span class="line">|</span>
+    <a class="nav" href="experience.html">Experience </a><span class="line">|</span>
+      <a class="nav" href="../contact/contact.html">Contact</a>
+    </div>
       </nav>
     </header>
 
     <main id="body-square">
         
-    </main><div class="title"><span>E</span><span>x</span><span>p</span><span>e</span><span>r</span><span>i</span><span>e</span><span>n</span><span>c</span><span>e</span>
+    <div class="title"><span>E</span><span>x</span><span>p</span><span>e</span><span>r</span><span>i</span><span>e</span><span>n</span><span>c</span><span>e</span>
 </div>
 <div class="shadow"><span>E</span><span>x</span><span>p</span><span>e</span><span>r</span><span>i</span><span>e</span><span>n</span><span>c</span><span>e</span>
 </div>
 
-    <h3>Skills</h3>
-    <ul>
-        <li>CSS</li>
-        <div class="progressbar">
-            <div></div>
-          </div>
-        
-        <li>HTML</li>
-        <li>Bootstrap</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Angular</li>
-        <li>Microsoft Azure</li>
-        <li>Java</li>
-
-    </ul>
-
+    <div class="skills">
+      <h3 class="flexheading">Skills</h3>
+    
+      <div class="skill-column">
+        <p>CSS</p>
+        <p>HTML</p>
+        <p>JavaScript</p>
+        <p>Java</p>
+        <p>Microsoft Azure</p>
+      </div>
+        <div class="skill-column">
+        <p>Bootstrap</p>
+        <p>React</p>
+        <p>Angular</p>
+        <p>Figma</p>
+        <p>Adobe Photoshop</p>
+      </div>
+    
+  </div>
         <h3>Programs</h3>
     <ul>
-        <li>The Web Developer Bootcamp 2022 (Colt Steele) (Certification)</li>    
-        <li>freeCodeCamp - Responsive Web Design (Certification)</li>
-            <li>edX - HTML5 & CSS Fundamentals</li>
+        <li><span class="important">Udemy</span> - The Web Developer Bootcamp 2022 (Colt Steele) (Certification)</li>    
+        <li><span class="important">freeCodeCamp</span> - Responsive Web Design (Certification)</li>
+            <li><span class="important">edX</span> |- HTML5 & CSS Fundamentals</li>
             <li>JavaScript30 (Wes Bos)</li>
-            <li>50 Projects in 50 Days (Brad Traversy) (Certification)</li>
-            <li>PluralSight - </li>
-            <li>freeCodeCamp - JavaScript Algorithims & Data Structures (Certification)</li>
-            
+            <li><span class="important">Udemy</span> - 50 Projects in 50 Days (Brad Traversy) (Certification)</li>
+            <li><span class="important">freeCodeCamp</span> - JavaScript Algorithims & Data Structures (Certification)</li>
+            <li><span class="important">Scrimba</span> - Learn React for Free (Bob Ziroll)</li>
     </ul>
 </main>
 
@@ -72,7 +76,7 @@
                     <codepen><a href="https://codepen.io/ksutula"></a>
                         <email> <a href="mailto:kaleighsutula@gmail.com"></a>
     </div>
-<script src="index.js"></script>
+<script src="../index.js"></script>
 </body>
 
 

@@ -9,8 +9,10 @@
 }
 
 #body-square {
-  margin: 30% auto;
+  margin: 20% auto;
+  padding-bottom: 10%;
   max-width: 80vw;
+  height: auto;
 }
 
 .shadow {
@@ -18,6 +20,7 @@
   transform: translate(-50%, -50%);
   top: 20%;
   left: 50%;
+  white-space: nowrap;
 }
 
 .shadow span {
@@ -25,8 +28,6 @@
   padding: 2px;
   font-size: 3rem;
   text-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-  transform: translateY(-100vh);
-  animation: fall 0.3s forwards;
 }
 
 .shadow {
@@ -55,6 +56,7 @@
   transform: translate(-50%, -50%);
   top: 20%;
   left: 50%;
+  white-space: nowrap;
 }
 
 .title span {
@@ -100,23 +102,35 @@
     transform: translateY(0);
   }
 }
-
-li {
-  list-style-type: none;
-}
-
-.progressbar {
-  background-color: var(--white);
-  border-radius: 13px;
-  /* (height of inner div) / 2 + padding */
-  padding: 3px;
-  width: 100px;
-}
-
-.progressbar > div {
-  background-color: var(--light-blue);
-  width: 70%;
-  /* Adjust with JavaScript */
-  height: 10px;
+.skills {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  border: 3px white solid;
+  padding: 10px 10px;
   border-radius: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.flexheading {
+  position: absolute;
+  display: block;
+  align-self: flex-start;
+  justify-self: center;
+  margin-top: 0;
+  font-family: "Libre Baskerville", serif;
+}
+
+.skill-column {
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: auto;
+}
+
+nav > span {
+  padding: 0px 7px;
+  margin-right: auto;
+  font-size: 38px;
 }

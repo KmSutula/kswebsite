@@ -486,5 +486,7 @@ line-height: 1;
   .title span,
   .shadow span {
     font-size: 1.3rem;
+    top: 20%;
+    left: 50%;
   }
 }
