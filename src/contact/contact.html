@@ -17,20 +17,30 @@
   <body>
     <header>
       <nav id="all-nav">
-        <span>KALEIGH SUTULA</span>
-        <a class="nav" href="/index.html">Home</a>
-        <a class="nav" href="/pages/mywork.html">My Work</a>
-        <a class="nav" href="/pages/experience.html">Experience</a>
-        <a class="nav" href="/pages/contact.html">Contact</a>
+        <span class="name nav">KALEIGH SUTULA</span>
+        <button id="menulines">
+          <img src="../assets/menu-pngrepo-com.png" id="hamburger" />
+        </button>
+        <div id="nav-menu">
+          <a class="nav" href="../index.html">Home</a
+          ><span class="line">|</span>
+          <a class="nav" href="../mywork/mywork.html">My Work</a
+          ><span class="line">|</span>
+          <a class="nav" href="../experience/experience.html">Experience </a
+          ><span class="line">|</span>
+          <a class="nav" href="../contact/contact.html">Contact</a>
+        </div>
       </nav>
     </header>
-
+    <div class="title">
+      <span>c</span><span>o</span><span>n</span><span>t</span><span>a</span
+      ><span>c</span><span>t</span> <span>m</span><span>e</span>
+    </div>
+    <div class="shadow">
+      <span>c</span><span>o</span><span>n</span><span>t</span><span>a</span
+      ><span>c</span><span>t</span> <span>m</span><span>e</span>
+    </div>
     <div id="form">
-         
-    </main><div class="title"><span>c</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>  <span>m</span><span>e</span>
-    </div>
-    <div class="shadow"><span>c</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>  <span>m</span><span>e</span>
-    </div>
       <p>
         Tell me your most niche app idea, what your ideal website looks like, or
         any other projects you need help with.
@@ -44,14 +54,13 @@
           <label for="email">Email:</label>
           <input type="email" name="email" id="email" required />
         </div>
-        <div>
-          <textarea
-            name="message"
-            placeholder="Enter message here"
-            id="textarea"
-            required
-          ></textarea>
-        </div>
+        <textarea
+          name="message"
+          placeholder="Enter message here"
+          id="textarea"
+          required
+        ></textarea>
+
         <button id="sendButton">Submit</button><span id="acceptedText"></span>
       </form>
     </div>
@@ -60,26 +69,26 @@
       <!-- not sure whether to use IMG or ICONS here -->
       <!--vertically aligned, bottom left corner-->
       <a href="https://twitter.com/kmsutula"
-        ><img src="/assets/twitter.png" class="socialicon"
+        ><img src="../assets/twitter.png" class="socialicon"
       /></a>
       <a href="https://www.linkedin.com/in/kaleighsutula"
-        ><img src="/assets/linkedin.png" class="socialicon"
+        ><img src="../assets/linkedin.png" class="socialicon"
       /></a>
       <a href="https://github.com/KmSutula"
-        ><img src="/assets/github.png" class="socialicon"
+        ><img src="../assets/github.png" class="socialicon"
       /></a>
       <a href="https://codepen.io/ksutula"
-        ><img src="/assets/codepen.png" class="socialicon"
+        ><img src="../assets/codepen.png" class="socialicon"
       /></a>
       <a href="mailto:kaleighsutula@gmail.com"
-        ><img src="/assets/email.png" class="socialicon"
+        ><img src="../assets/email.png" class="socialicon"
       /></a>
     </div>
     <div class="circle" id="social-circle">
-      <button id="open"><img src="/assets/open-arrow.png" /></button>
-      <button id="close"><img src="/assets/x.png" /></button>
+      <button id="open"><img src="../assets/open-arrow.png" /></button>
+      <button id="close"><img src="../assets/x.png" /></button>
     </div>
-    <script src="./contact.js"></script>
+    <script src="contact.js"></script>
     <script src="../index.js"></script>
   </body>
 

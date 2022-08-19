@@ -13,7 +13,7 @@ async function postData(url = "", data = {}) {
     referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
     body: JSON.stringify(data), // body data type must match "Content-Type" header
   });
-  return response; // parses JSON response into native JavaScript objects
+  return response;
 }
 //send email
 const submitButton = document.getElementById("sendButton");
@@ -39,10 +39,12 @@ submitButton.addEventListener("click", async () => {
     replyEmail: inputs[1].value,
     message: textArea.value,
   };
-  await postData(url, data);
+  if (data.name && data.replyEmail && data.message) {
+    await postData(url, data);
 
-  acceptedMessage.innerHTML = "Thank you, your message was submitted!";
-  acceptedMessage.classList.add("fade-out");
+    acceptedMessage.innerHTML = "Thank you, your message was submitted!";
+    acceptedMessage.classList.add("fade-out");
+  }
 });
 
 //open/close social footer
