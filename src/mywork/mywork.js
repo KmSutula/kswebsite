@@ -6,19 +6,6 @@ const workSamps = document.querySelectorAll(".worksample");
 const rightButton = document.getElementById("right-arrow");
 const leftButton = document.getElementById("left-arrow");
 
-// sampleImgs.forEach((img) => {
-//   img.addEventListener("mouseenter", () => {
-//     img.classList.add("hover");
-//   });
-// });
-
-// for (let img of sampleImgs) {
-//     img.addEventListener("mouseenter", () => {
-//       if (img.classList.contains("active")) {
-//         img.classList.add(".hover");
-//       }
-//     });
-//   }
 let activeSample = 0;
 workSamps[activeSample].classList.add("active");
 
@@ -28,8 +15,6 @@ rightButton.addEventListener("click", () => {
     activeSample = 0;
   }
   makeActive();
-
-  //more code goes here after functions created
 });
 
 leftButton.addEventListener("click", () => {
@@ -42,7 +27,9 @@ leftButton.addEventListener("click", () => {
 
 function makeActive() {
   workSamps.forEach((sample) => {
-    sample.classList.remove("active");
+    if (sample.classList.contains("active")) {
+      sample.classList.remove("active");
+    }
   });
 
   workSamps[activeSample].classList.add("active");

@@ -23,6 +23,7 @@ body {
   transform: translate(-50%, -50%);
   top: 20%;
   left: 50%;
+  white-space: nowrap;
 }
 .title span {
   display: inline-block;
@@ -46,6 +47,7 @@ body {
   transform: translate(-50%, -50%);
   top: 20%;
   left: 50%;
+  white-space: nowrap;
 }
 
 .shadow span {
@@ -95,75 +97,74 @@ nav > span {
 }
 
 #worksamplecontainer {
-  position: absolute;
-  top: 30%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  justify-content: space-between;
+  top: 30%;
   height: 70vh;
   width: 100vw;
 }
 
 .worksample {
-  max-height: 400px;
-  max-width: calc(100vw - 200px);
   display: none;
   justify-content: center;
   opacity: 0;
 }
 
 .worksample.active {
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  height: 600px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   opacity: 1;
 }
 
 img.sample {
-  max-width: 500px;
-  align-self: center;
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
-
-img.sample:hover {
-  transform-origin: center left;
-  transform: scale(1.5);
-  transition-timing-function: ease-in-out;
-}
+/* div > img {
+  object-fit: cover;
+} */
 
 div.description {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: absolute;
+  bottom: 20;
   background-color: var(--grey);
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
   padding: 20px;
-  max-width: 645px;
-  max-height: 400px;
-  overflow-x: hidden;
+  max-width: 100%;
+  height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
 }
 
-div.description:hover {
-  transform-origin: center right;
-  transform: scale(1.5);
-  transition-timing-function: ease-in-out;
+.worksample.active:hover .description {
+  transform: translateY(0%);
 }
 
 .arrow {
-  position: absolute;
   background-color: transparent;
-  top: calc(50%- 50px);
   width: 100px;
   border: none;
   cursor: pointer;
 }
 
-.arrow > img:active {
+.arrow:active {
   transition: 0.2s;
   transform: scale(0.6);
 }
 
 .arrow img {
-  width: 100%;
+  width: 100px;
 }
 
 #left-arrow {
@@ -176,4 +177,7 @@ div.description:hover {
   left: calc(100vw - 100px);
   filter: invert(60%) sepia(51%) saturate(7189%) hue-rotate(23deg)
     brightness(94%) contrast(88%);
+}
+
+@media (max-width: 894px) {
 }
