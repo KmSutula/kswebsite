@@ -9,18 +9,12 @@
 }
 
 #body-square {
-  margin: 20% auto;
-  padding-bottom: 10%;
-  max-width: 80vw;
-  height: auto;
-}
-
-.shadow {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 20%;
-  left: 50%;
-  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: calc(80vh- 50px);
 }
 
 .shadow span {
@@ -30,19 +24,23 @@
   text-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
+#titleshadow {
+  padding: 50px 0px;
+  height: 20%;
+}
+
 .shadow {
   text-transform: uppercase;
   text-align: center;
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 200;
+  font-weight: 600;
   z-index: -2;
+  position: absolute;
   color: var(--grey);
   filter: blur(3px);
-  position: absolute;
   transform: translate(-50%, -50%);
-  top: 20%;
-  left: 50%;
+  white-space: nowrap;
 }
 
 .title {
@@ -54,8 +52,6 @@
   z-index: -1;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 20%;
-  left: 50%;
   white-space: nowrap;
 }
 
@@ -109,8 +105,9 @@
   border: 3px white solid;
   padding: 10px 10px;
   border-radius: 10px;
-  max-height: 400px;
+  min-height: 70%;
   overflow-y: auto;
+  height: 30%;
 }
 
 .flexheading {
@@ -123,6 +120,7 @@
 }
 
 .skill-column {
+  margin-top: 20px;
   width: 50%;
   text-align: center;
   text-transform: uppercase;
@@ -133,4 +131,20 @@ nav > span {
   padding: 0px 7px;
   margin-right: auto;
   font-size: 38px;
+}
+h3 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 25px;
+  margin-top: 20px;
+}
+ul {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 750px) {
+  .title > span,
+  .shadow > span {
+    font-size: 2rem;
+  }
 }

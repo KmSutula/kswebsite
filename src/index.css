@@ -15,15 +15,14 @@
 html {
   font-size: 20px;
   color: var(--lightest-yellow);
-  box-sizing: border-box;
 }
 
 body {
   background-color: var(--navy);
   font-family: "Montserrat", sans-serif;
-  margin: 0;
   width: 100vw;
   height: 100vh;
+  margin: 0;
 }
 
 a.nav,
@@ -46,7 +45,9 @@ a.nav:hover {
   color: var(--goldenrod);
   filter: none;
 }
-
+nav {
+  display: block;
+}
 #all-nav {
   display: flex;
   flex-wrap: nowrap;
@@ -55,6 +56,7 @@ a.nav:hover {
   line-height: 50px;
   border-bottom: 4px solid var(--goldenrod);
   background-color: var(--blue);
+  margin: 0px 0px 10px 0px;
 }
 
 /* #nav-menu {
@@ -409,6 +411,7 @@ h1 span {
 }
 
 #nav-menu.active {
+  visibility: visible;
   transform: translateX(0%);
 }
 
@@ -444,6 +447,7 @@ line-height: 1;
   }
 
   #nav-menu {
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -454,10 +458,11 @@ line-height: 1;
     height: 200px;
     top: 50px;
     right: 0px;
-    background-color: rgba(27, 73, 101, 0.5);
+    background-color: var(--navy);
     border-radius: 0px 0px 0px 20px;
-    transform: translateX(200%);
+    transform: translateX(100%);
     transition: transform 0.5s ease;
+    z-index: 5;
   }
 
   span.line {
