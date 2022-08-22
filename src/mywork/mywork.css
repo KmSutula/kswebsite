@@ -180,4 +180,35 @@ div.description {
 }
 
 @media (max-width: 894px) {
+  #worksamplecontainer {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    gap: 20px;
+  }
+  .worksample,
+  .worksample.active {
+    display: flex;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    opacity: 1;
+  }
+  .worksample:hover .description {
+    transform: translateY(0%);
+  }
+  .description {
+    bottom: 0;
+    font-size: 70%;
+    margin: auto;
+    width: inherit;
+    object-fit: contain;
+  }
+
+  .arrow {
+    display: none;
+  }
 }
