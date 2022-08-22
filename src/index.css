@@ -487,7 +487,14 @@ line-height: 1;
   span.name {
     font-size: 0.9rem;
   }
-
+  .headshot {
+    float: none;
+    margin: auto;
+  }
+  #introduction {
+    margin: auto;
+    padding: 0;
+  }
   .title span,
   .shadow span {
     font-size: 1.3rem;
