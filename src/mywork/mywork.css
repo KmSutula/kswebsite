@@ -146,6 +146,10 @@ div.description {
   transform: translateY(101%);
   transition: transform 0.3s ease-in;
 }
+.description a {
+  color: var(--teal);
+  text-decoration: none;
+}
 
 .worksample.active:hover .description {
   transform: translateY(0%);
