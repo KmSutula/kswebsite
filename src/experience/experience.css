@@ -137,14 +137,37 @@ h3 {
   font-size: 25px;
   margin-top: 20px;
 }
-ul {
-  margin-top: 0;
+.program--list {
+  padding: 0;
+  list-style-type: none;
   text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+li {
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+
+li a {
+  text-decoration: none;
+  color: var(--light-blue);
+  display: block;
 }
 
 @media (max-width: 750px) {
   .title > span,
   .shadow > span {
     font-size: 2rem;
+  }
+
+  .program--list {
+    font-size: 12px;
+  }
+  .important {
+    font-size: 14px;
   }
 }
