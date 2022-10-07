@@ -21,7 +21,7 @@ body {
   z-index: -1;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 20%;
+  top: 25%;
   left: 50%;
   white-space: nowrap;
 }
@@ -45,7 +45,7 @@ body {
   filter: blur(3px);
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 20%;
+  top: 25%;
   left: 50%;
   white-space: nowrap;
 }
@@ -185,7 +185,7 @@ div.description {
 
 @media (max-width: 894px) {
   #worksamplecontainer {
-    display: flex;
+    display: block;
     flex-direction: column;
     height: 90vh;
     gap: 20px;
@@ -193,22 +193,27 @@ div.description {
   .worksample,
   .worksample.active {
     display: flex;
-    height: 600px;
+    flex-direction: column;
+    height: 300px;
+    width: auto;
+    margin: 25px 0;
     position: relative;
     overflow: hidden;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
+
     opacity: 1;
+  }
+  img.sample {
+    object-fit: contain;
   }
   .worksample:hover .description {
     transform: translateY(0%);
   }
   .description {
     bottom: 0;
-    font-size: 70%;
-    margin: auto;
-    width: inherit;
+    font-size: 50%;
+    width: auto;
     object-fit: contain;
   }
 

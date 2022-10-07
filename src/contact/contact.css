@@ -27,7 +27,7 @@ html {
   filter: blur(3px);
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 20%;
+  top: 25%;
   left: 50%;
   white-space: nowrap;
 }
@@ -41,7 +41,7 @@ html {
   z-index: -1;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 20%;
+  top: 25%;
   left: 50%;
   white-space: nowrap;
 }
@@ -102,8 +102,8 @@ nav > span {
 #form {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   align-content: center;
