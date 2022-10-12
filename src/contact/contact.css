@@ -107,10 +107,12 @@ nav > span {
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-top: 150px;
 }
 
 form {
   border: 3px solid white;
+
   width: 500px;
   padding: 20px;
   border-radius: 10px;
