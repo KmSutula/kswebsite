@@ -1,80 +1,89 @@
+const quoteOne = document.querySelectorAll(".quote-one");
+const quoteTwo = document.querySelectorAll(".quote-two");
+const loadBox = document.getElementById("load-box");
+const feDev = document.getElementById("fe-dev");
+const opera = document.getElementById("opera");
+const dogMom = document.getElementById("dog-mom");
+const footer = document.getElementById("footer");
 
-const engQuote = document.getElementById('quote-reveal')
-const canvas = document.getElementById('canvas')
-const ctx = canvas.getContext('2d')
+$(window).on("load", function () {
+  $(loadBox).delay(6000).fadeOut(1000);
 
-window.addEventListener('load', draw)
+  $(quoteOne).addClass("active");
+  $(quoteTwo).addClass("active");
 
+  setTimeout(function () {
+    $("body").removeClass("h-full overflow-hidden");
+    $("html").removeClass("h-full overflow-hidden");
+    $(footer).addClass("opacity-50").removeClass("opacity-0");
+  }, 10500);
 
+  setTimeout(function () {
+    $(feDev).addClass("opacity-100 flipY").removeClass("opacity-0");
+    $(opera).addClass("opacity-80").removeClass("opacity-0");
+    $(dogMom).addClass("opacity-60").removeClass("opacity-0");
+  }, 7500);
+});
 
+$(document).ready(function () {
+  $(window).scroll(function () {
+    $(".fade").each(function (i) {
+      var bottom_of_element = $(this).offset().top + 200;
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-let vertices=[];
-vertices.push({x:618, y:28});
-vertices.push({x:800, y:28});
-vertices.push({x:800, y:130});
-vertices.push({x:180, y:130});
-vertices.push({x:180, y:90});
-vertices.push({x:200, y:90});
+      if (bottom_of_window > bottom_of_element) {
+        $(this).animate({ opacity: "1" }, 500);
+      }
+    });
+  });
+});
 
+//CONTACT FORM
+async function postData(url = "", data = {}) {
+  const response = await fetch(url, {
+    method: "POST",
+    mode: "cors",
+    cache: "no-cache",
+    credentials: "same-origin",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    redirect: "follow",
+    referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data), // body data type must match "Content-Type" header
+  });
+  return response;
+}
+//send email
+const submitButton = document.getElementById("sendButton");
+const inputs = document.querySelectorAll("input");
+const textArea = document.querySelector("textarea");
+const url =
+  "https://functionsite.azurewebsites.net/api/ContactForm?code=MfEKY_yBSvRN-8NKD-G0Vkp27i1a1RqgKku4vJsvAOgUAzFuQ_hO3A==";
+const submitDiv = document.createElement("div");
+const acceptedMessage = document.getElementById("acceptedText");
 
-function calcWaypoints(vertices){
-    let waypoints=[];
-    for(let i=1; i<vertices.length; i++){
-        let pt0=vertices[i-1];
-        let pt1=vertices[i];
-        let dx=pt1.x-pt0.x;
-        let dy=pt1.y-pt0.y;
-        if (dx < 0){
-            for(let j=1; j < 800; j++){
-            let x=pt0.x+dx*j/800;
-            let y=pt0.y+dy*j/800;
-            waypoints.push({x:x,y:y});
-        }}
-        else{for(let j=1; j < 300; j++){
-            let x=pt0.x+dx*j/300;
-            let y=pt0.y+dy*j/300;
-            waypoints.push({x:x,y:y});
-        }}
+// const message = document.getElementById("acceptedText");
+
+submitButton.addEventListener("click", async () => {
+  inputs.forEach((element) => {
+    if (element.value) {
+      element.disabled = true;
     }
-    return(waypoints);
-}
+  });
+  if (textArea.value) {
+    textArea.disabled = true;
+  }
 
-let points=calcWaypoints(vertices);
+  const data = {
+    name: inputs[0].value,
+    replyEmail: inputs[1].value,
+    message: textArea.value,
+  };
+  if (data.name && data.replyEmail && data.message) {
+    await postData(url, data);
 
-let t = 1;
-
-draw();
-
-function draw(){
-    if(t < points.length-1){ requestAnimationFrame(draw); }
- 
-    ctx.strokeStyle = "#fff"
-    ctx.beginPath();
-    ctx.moveTo(points[t-1].x, points[t-1].y);
-    ctx.lineTo(points[t].x, points[t].y);
-    ctx.stroke();
-    t++;
-}
-
-
-// function draw() {
-//    c.beginPath()
-//    c.moveTo(618, 28)
-//    c.lineTo(800, 28)
-//    c.lineTo(800, 130)
-//    c.lineTo(180, 130)
-//    c.lineTo(180, 90)
-//    c.lineTo(200, 90)
-
-
-
-
-  
-
-
-
-
-//    c.stroke()
-
-// }
-
+    acceptedMessage.innerHTML = "Thank you, your message was submitted!";
+    acceptedMessage.classList.add("fade-out");
+  }
+});
