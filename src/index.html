@@ -1,142 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1"
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <!-- <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="mywork.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" type="text/css" href="./index.css" />
-
-    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@200;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,700;1,200&family=Lora&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/df14e517a5.js"
-      crossorigin="anonymous"
-    ></script>
-
     <title>K.Sutula - Home</title>
   </head>
-
-  <nav id="all-nav">
-    <img src="./assets/logo yellow-yellow.png" />
-    <button id="menulines">
-      <img src="./assets/menu-pngrepo-com.png" id="hamburger" />
-    </button>
-
-    <div id="nav-menu">
-      <a class="nav" href="index.html">Home</a><span class="line">|</span>
-      <a class="nav" href="mywork/mywork.html">My Work</a
-      ><span class="line">|</span>
-      <a class="nav" href="experience/experience.html">Experience </a
-      ><span class="line">|</span>
-      <a class="nav" href="contact/contact.html">Contact</a>
-    </div>
-  </nav>
-
   <body>
-    <h1 id="greetingreveal">
-      <span></span>
-      <div class="message">
-        <div class="greeting1">Hola!</div>
-        <div class="greeting2">Bonjour!</div>
-        <div class="greeting3">Hello!</div>
-        <div class="greeting4">Ciao!</div>
+    <div
+      id="name-banner"
+      class="relative -top-5 mx-auto flex w-2/5 items-center justify-center rounded-xl bg-darkPurple pb-10"
+    >
+      <h1
+        id="first-last-name"
+        class="mt-10 flex-1 font-sans text-5xl uppercase tracking-widest text-white"
+      >
+        Kaleigh Sutula
+      </h1>
+      <h2 id="job-title" class="font-sans uppercase text-white">
+        Front-End Developer
+      </h2>
+    </div>
+    <div id="quote-box">
+      <canvas id="canvas" height="150" width="900"></canvas>
+      <div id="quote-ger">
+        <h3 class="text-xl">Wo ich erschaffe, da bin ich wahr.</h3>
       </div>
-    </h1>
-    <h2 id="introduction">
-      I'm Kaleigh: front-end developer, teacher, and singer.
-    </h2>
-    <main id="body-square">
-      <div class="headshot"></div>
 
-      <div id="bio">
+      <div id="quote-eng">
+        <h3 id="quote-reveal">Where I create, there I am true.</h3>
+      </div>
+    </div>
+
+    <main>
+      <div id="leftside-banner">
+        <div id="home-leftside-banner">
+          <img
+            src="./ksheadshot.jpg"
+            id="headshot"
+            alt="Professional Headshot of Kaleigh Sutula"
+          />
+          <h3>Things I do <br />(other than tech)</h3>
+          <ul>
+            <li class="fun-thing">disc golf</li>
+            <li class="fun-thing">hiking</li>
+            <li class="fun-thing">write poetry</li>
+            <li class="fun-thing">gaming</li>
+            <li class="fun-thing">spin class!</li>
+
+            <li class="fun-thing">camping</li>
+            <li class="fun-thing">checking out art museums</li>
+            <li class="fun-thing">opera singing</li>
+            <li class="fun-thing">volleyball in the backyard</li>
+            <li class="fun-thing">puzzles</li>
+            <li class="fun-thing">rock climbing</li>
+            <li class="fun-thing">baking cookies</li>
+            <li class="fun-thing">learning new languages</li>
+            <li class="fun-thing">hanging with my pup, Freya</li>
+          </ul>
+        </div>
+        <div id="mywork-leftside-banner">
+          <h3>Here's what I'm currently working on:</h3>
+          <ul>
+            <li class="working-on">
+              a database composer search app, for music students like my former
+              self
+            </li>
+            <li class="working-on">learning to love React</li>
+            <li class="working-on">
+              completing 50 projects with CSS/HTML/Vanilla JavaScript
+            </li>
+            <li class="working-on">
+              building projects using Bootstrap and Tailwind
+            </li>
+          </ul>
+        </div>
+        <div id="experience-leftside-banner">
+          <h3>Design Programs</h3>
+          <ul>
+            <li class="skill">Figma</li>
+            <li class="skill">Abode Photoshop</li>
+            <li class="skill">Canva</li>
+            <li class="skill">Bootstrap</li>
+          </ul>
+        </div>
+        <div id="contact-leftside-banner">
+          <h3>I can't wait to hear from you!</h3>
+        </div>
+      </div>
+      <!-- <div id="side-nav">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="#" class="nav-link">My Work</a>
+        <a href="#" class="nav-link">Experience</a>
+        <a href="#" class="nav-link">Contact</a>
+      </div> -->
+
+      <div id="home-section">
+        <h2>Hi, I'm Kaleigh.</h2>
         <p>
           I love learning new tech skills, making striking websites, improving
           my foreign language proficiency, and teaching people about things they
-          didn't know they were interested in.
+          didn't know they were interested in. <br /><br />As a teacher of 5
+          years, I am passionate about collaborative learning, brainstorming new
+          methods, and being a lifelong student. Teaching has also made me
+          adaptable, strengthened my problem-solving, and made me an excellent
+          time manager. I am enthusiastic about building professional
+          relationships through exchanging knowledge. <br />As a musician of
+          many more, I understand the importance of commitment to your craft and
+          practicing to increase your skillset.<br /><br />
+          <span class="important"
+            >I hope to soon accept a role as a junior software developer and
+            would love to talk more about any opportunity to do that.</span
+          >
         </p>
+      </div>
 
-        <p>
-          As a teacher of 5 years, I am passionate about collaborative learning,
-          brainstorming new methods, and being a lifelong student. Teaching has
-          also made me adaptable, strengthened my problem-solving, and made me
-          an excellent time manager. I am enthusiastic about building
-          professional relationships through exchanging knowledge.
-        </p>
-        <p>
-          As a musician for many more years, I enjoy singing with friends in
-          professional and casual settings as often as I can. I love to discover
-          new video games (RPGs especially), spend as much time outside as
-          possible, and cooking up recipes from different cultures.
-        </p>
-        <p class="important">
-          I hope to soon accept a role as a junior software developer and would
-          love to talk more about any opportunity to do that.
-        </p>
+      <div id="my-work">
+        <h2>My Work</h2>
+
+        <div id="items">
+          <div class="item">
+            <div class="work-img">
+              <img src="../assets/colinws.png" class="sample" id="sample1" />
+            </div>
+            <div class="description" id="description1">
+              <h2>Colin Mann, conductor<br />(Professional Website)</h2>
+              <p>
+                Colin wanted a classy, sharp and simple website to cleanly
+                portray his many professions. His site features several pages
+                and a built in contact form.
+              </p>
+              <a
+                href="https://www.figma.com/file/cqRwLjL7iJFWnliMaRBHyL/Colin-website?node-id=0%3A1"
+                >See the mock-up here! (Work in progress)</a
+              >
+            </div>
+          </div>
+          <div class="item">
+            <img src="../assets/pomodoro.png" class="sample" id="sample2" />
+            <div class="description" id="description2">
+              <h2>Pomodoro Timer App<br />(Project)</h2>
+              <p>
+                A single page application that is based on the Pomodoro
+                technique of splitting up work sessions with small breaks.
+                Adjust the time you want to spend working and the amount of time
+                you want to break for, then press the play button to start the
+                work interval! Also includes a pause button and a reset button.
+                A alert sound plays at the end of each timed session. An
+                effective way to study, and I use it myself!
+              </p>
+              <a
+                href="https://github.com/KmSutula/FrontEndLibrariesFCC/tree/main/sessionBreakClock"
+                >See the code here!</a
+              >
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="../assets/travelbookws.png" class="sample" id="sample3" />
+            <div class="description" id="description3">
+              <h2>My Travel Book<br />(React Site)</h2>
+              <p>
+                A static React site, populated dynamically from a local data
+                file. This project uses flexbox and media queries to be
+                responsive at all sizes.
+              </p>
+              <a href="https://github.com/KmSutula/travel-journal"
+                >See the code here!</a
+              >
+            </div>
+          </div>
+
+          <div class="item">
+            <img
+              src="../assets/quoteGenerator.png"
+              class="sample"
+              id="sample4"
+            />
+            <div class="description" id="description4">
+              <h2>Quote Generator<br />(API-connected site)</h2>
+              <p>
+                This site uses vanilla JS, HTML and CSS to generate quotes
+                provided by the Quotable API. There is also functionality built
+                in to tweet any quotes you find particularly inspiring!
+              </p>
+              <a
+                href="https://github.com/KmSutula/FrontEndLibrariesFCC/tree/main/quoteGenerator"
+                >See the code here!</a
+              >
+            </div>
+          </div>
+
+          <div class="item">
+            <!-- <a class="samplelink" href="www.kaleighsutula.com"><img src="../assets/kswebsite.png" class="sample" id="sample1"></a> -->
+            <img src="../assets/kswebsite.png" class="sample" id="sample5" />
+            <div class="description" id="description5">
+              <h2>Personal Website<br />(Professional Website)</h2>
+              <p>
+                My very first project, designing my own website! I wanted to
+                develop something that utilized transitions & animations in a
+                seamless and responsive interface. Updates always in progress!
+              </p>
+              <a href="https://github.com/KmSutula/kswebsite"
+                >See the code here!</a
+              >
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="../assets/drumKit.png" class="sample" id="sample6" />
+            <div class="description" id="description6">
+              <h2>Drum Kit <br />(Project)</h2>
+              <p>
+                A simple page that displays a drumkit as a subset of the
+                keyboard. This page is responsive to mouse clicks and keyboard
+                events, and the sound display changes with each input.
+              </p>
+              <a
+                href="https://github.com/KmSutula/FrontEndLibrariesFCC/tree/main/drumkit"
+                >See the code here!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="experience">
+        <h2>Programs</h2>
+        <ul class="program--list">
+          <li>
+            <span class="important">Udemy</span>
+          </li>
+          <li>
+            The Web Developer Bootcamp 2022<br />
+            (Colt Steele)
+          </li>
+          <li>In Progress</li>
+          <li>
+            <span class="important">freeCodeCamp</span>
+          </li>
+          <li>Responsive Web Design</li>
+          <li>
+            <a
+              href="https://freecodecamp.org/certification/sutulip/responsive-web-design"
+              target="_blank"
+              >(Certification)</a
+            ><br /><span class="important">Completed July '22</span>
+          </li>
+          <li>
+            <span class="important">freeCodeCamp</span>
+          </li>
+          <li>JavaScript Algorithims & Data Structures</li>
+          <li>
+            <a
+              href="https://freecodecamp.org/certification/sutulip/javascript-algorithms-and-data-structures"
+              target="_blank"
+              >(Certification)</a
+            ><br />
+            <span class="important">Completed August '22</span>
+          </li>
+          <li><span class="important">edX</span></li>
+          <li>HTML5 & CSS Fundamentals</li>
+          <li><span class="important">Completed July '22</span></li>
+          <li><span class="important">WesBos.com</span></li>
+          <li>JavaScript30</li>
+          <li>In Progress</li>
+          <li>
+            <span class="important">Udemy</span>
+          </li>
+          <li>50 Projects in 50 Days <br />(Brad Traversy)</li>
+          <li>In Progress</li>
+          <li>
+            <span class="important">Scrimba</span>
+          </li>
+          <li>Learn React for Free <br />(Bob Ziroll)</li>
+          <li>In Progress</li>
+        </ul>
       </div>
     </main>
 
-    <div id="social-blocks">
-      <div class="blocks">
-        <div class="overlay">
-          <a
-            href="https://www.linkedin.com/in/kaleighsutula"
-            class="socialblocklink"
-            ><p>LinkedIn</p></a
-          >
-        </div>
-      </div>
-      <div class="blocks">
-        <div class="overlay">
-          <a href="https://github.com/KmSutula" class="socialblocklink"
-            ><p>GitHub</p></a
-          >
-        </div>
-      </div>
-      <div class="blocks">
-        <div class="overlay">
-          <a href="https://twitter.com/kmsutula" class="socialblocklink"
-            ><p>Twitter</p></a
-          >
-        </div>
-      </div>
-    </div>
-
     <div id="social-footer">
-      <!--vertically aligned, bottom left corner-->
-      <a href="https://twitter.com/kmsutula"
-        ><img src="./assets/twitter.png" class="socialicon"
-      /></a>
-
-      <a href="https://www.linkedin.com/in/kaleighsutula"
-        ><img src="./assets/linkedin.png" class="socialicon"
-      /></a>
-      <a href=" https://github.com/KmSutula"
-        ><img src="./assets/github.png" class="socialicon"
-      /></a>
-
-      <a href=" https://codepen.io/ksutula"
-        ><img src="./assets/codepen.png" class="socialicon"
-      /></a>
-
-      <a href=" mailto:kaleighsutula@gmail.com"
-        ><img src="./assets/email.png" class="socialicon"
-      /></a>
+      <div id="icons">
+        <a href="https://twitter.com/kmsutula" target="_blank"
+          ><i class="fa-brands fa-square-twitter fa-xl"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/kaleighsutula" target="_blank">
+          <i class="fa-brands fa-linkedin fa-xl"></i
+        ></a>
+        <a href="https://github.com/KmSutula" target="_blank"
+          ><i class="fa-brands fa-square-github fa-xl"></i
+        ></a>
+        <a href="https://codepen.io/ksutula" target="_blank"
+          ><i class="fa-brands fa-codepen fa-xl"></i
+        ></a>
+        <a href="mailto:kaleighsutula@gmail.com" target="_blank"
+          ><i class="fa-solid fa-square-envelope fa-xl"></i
+        ></a>
+      </div>
+      <h2 id="thank-you-footer">Thanks for stopping by</h2>
     </div>
-    <div class="circle" id="social-circle">
-      <button id="open"><img src="./assets/open-arrow.png" /></button>
-      <button id="close"><img src="./assets/x.png" /></button>
-    </div>
+
+    <!-- <script
+      src="https://kit.fontawesome.com/df14e517a5.js"
+      crossorigin="anonymous"
+    ></script> -->
     <script src="index.js"></script>
   </body>
-
-  <!--<footer>
-    © Kaleigh Sutula All Rights Reserved. 2022
-</footer>-->
 </html>
