@@ -18,17 +18,13 @@
       href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,400;0,700;1,500&family=Lora&family=Rubik+Glitch&display=swap"
       rel="stylesheet"
     />
-    <title>K.Sutula - Home</title>
+    <title>Kaleigh Sutula - Front End Dev</title>
   </head>
   <body class="h-full overflow-hidden bg-darkBlack">
     <div
       id="load-box"
       class="fixed top-0 z-[60] flex h-full w-full flex-col items-center justify-center bg-darkBlack"
     >
-      <img
-        src="./assets/logo-stars.png"
-        class="absolute top-3 left-3 z-20 w-20"
-      />
       <div
         id="quote-ger"
         class="my-5 mx-auto text-center text-l text-greyPurple"
@@ -57,10 +53,9 @@
         </p>
       </div>
     </div>
-    <img src="./assets/logo-stars.png" class="absolute top-3 left-3 w-20" />
     <div
       id="hero"
-      class="relative mx-auto mb-24 mt-28 w-11/12 overflow-hidden border-x-2 border-solid border-x-sageGreen border-opacity-70 bg-darkBlack px-6 py-8 text-white shadow-[0px_0px_8px_0px_rgba(255,255,255,0.3)] transition-all ease-in-out sm:w-3/5 sm:px-5"
+      class="relative mx-auto my-12 h-auto w-11/12 overflow-hidden border-x-2 border-solid border-x-sageGreen border-opacity-70 bg-darkBlack px-6 py-8 text-white shadow-[0px_0px_8px_0px_rgba(255,255,255,0.3)] transition-all ease-in-out sm:w-1/2 sm:px-5"
     >
       <div class="sky">
         <div class="star"></div>
@@ -72,16 +67,18 @@
         id="hero-container"
         class="mx-auto flex max-w-2xl flex-col items-end"
       >
-        <h2 class="self-start text-xl text-whitish sm:text-2xl lg:text-4xl">
+        <h2
+          class="self-start text-xl leading-tight text-whitish sm:text-2xl lg:text-4xl"
+        >
           Hi, I'm
         </h2>
         <h1
-          class="self-start font-accent text-2xl text-greyPurple transition-all ease-in-out sm:text-3xl lg:text-5xl"
+          class="self-start font-accent text-2xl leading-tight text-greyPurple transition-all ease-in-out sm:text-3xl lg:text-5xl"
         >
           Kaleigh
         </h1>
         <h1
-          class="self-end font-accent text-2xl text-greyPurple transition-all ease-in-out sm:text-3xl lg:text-5xl"
+          class="self-end font-accent text-2xl leading-tight text-greyPurple transition-all ease-in-out sm:text-3xl lg:text-5xl"
         >
           Sutula
         </h1>
@@ -106,7 +103,7 @@
         <img
           id="headshot"
           src="./assets/ksheadshot.jpg"
-          class="relative -top-8 left-2 w-36 self-start rounded-full transition-all ease-in-out lg:left-24 lg:w-52"
+          class="relative -top-10 left-2 w-36 self-start rounded-full transition-all ease-in-out lg:left-24 lg:w-52"
         />
       </div>
     </div>
@@ -141,589 +138,609 @@
         <li class="fun-thing">hanging with my pup, Freya</li>
       </ul>
     </div> -->
-
-    <nav
-      class="sticky top-4 z-50 flex w-3/12 flex-col justify-between overflow-hidden py-2 transition-all ease-in-out xl:w-2/12"
-    >
-      <div
-        id="side-nav"
-        class="grid w-full max-w-[100px] rounded-r-lg bg-greyPurple pl-[4px] text-sm uppercase text-white transition-all ease-in-out sm:max-w-[200px] sm:text-m md:text-l"
+    <main class="relative">
+      <nav
+        class="fade sticky top-10 bottom-10 z-50 flex h-[90vh] w-[30%] flex-col justify-between overflow-hidden opacity-0 lg:w-2/12"
       >
-        <a
-          href="#home-section"
-          class="nav-link row-span-1 border-b border-white hover:text-sageGreen"
-          >Home</a
+        <div
+          id="side-nav"
+          class="relative grid w-full max-w-[100px] rounded-r-lg bg-greyPurple pl-[4px] uppercase text-white transition-all ease-in-out sm:max-w-[200px] sm:text-m md:text-l"
         >
-        <a
-          href="#my-work-section"
-          class="nav-link row-span-1 border-b border-white hover:text-sageGreen"
-          >My Work</a
+          <a
+            href="#home-section"
+            class="nav-link row-span-1 border-b border-white hover:text-sageGreen"
+            >Home</a
+          >
+          <a
+            href="#my-work-section"
+            class="nav-link row-span-1 border-b border-white hover:text-sageGreen"
+            >My Work</a
+          >
+          <a
+            href="#experience-section"
+            class="nav-link row-span-1 border-b border-white hover:text-sageGreen"
+            >Experience</a
+          >
+          <a
+            href="#contact-section"
+            class="nav-link row-span-1 hover:text-sageGreen"
+            >Contact</a
+          >
+          <!-- <a
+            id="click-to-see"
+            href="#"
+            class="nav-link row-span-1 hover:text-sageGreen"
+            ><i class="fa-solid fa-arrow-left text-sm"></i
+            ><small> more</small></a
+          > -->
+        </div>
+        <div id="social-nav" class="relative flex w-8 flex-col pl-[8px]">
+          <a
+            class="my-2 w-8 hover:shadow-[0_5px_6px_rgba(135,62,49,0.2)]"
+            href="https://twitter.com/kmsutula"
+            ><i
+              class="fa-brands fa-twitter fa-2xl text-sageGreen hover:-translate-y-1"
+            ></i
+          ></a>
+
+          <a
+            class="my-2 w-8 hover:shadow-[0_5px_6px_rgba(135,62,49,0.2)]"
+            href="https://www.linkedin.com/in/kaleighsutula"
+            ><i
+              class="fa-brands fa-linkedin-in fa-2xl text-sageGreen hover:-translate-y-1"
+            ></i
+          ></a>
+          <a
+            class="my-2 w-8 hover:shadow-[0_5px_6px_rgba(135,62,49,0.2)]"
+            href=" https://github.com/KmSutula"
+            ><i
+              class="fa-brands fa-github fa-2xl text-sageGreen hover:-translate-y-1"
+            ></i
+          ></a>
+
+          <a
+            class="my-2 w-8 hover:shadow-[0_5px_6px_rgba(135,62,49,0.2)]"
+            href=" https://codepen.io/ksutula"
+            ><i
+              class="fa-brands fa-codepen fa-2xl text-sageGreen hover:-translate-y-1"
+            ></i
+          ></a>
+
+          <a
+            class="mt-2 w-8 hover:shadow-[0_5px_6px_rgba(135,62,49,0.2)]"
+            href=" mailto:kaleighsutula@gmail.com"
+            ><i
+              class="fa-regular fa-envelope fa-2xl text-sageGreen hover:-translate-y-1"
+            ></i
+          ></a>
+        </div>
+      </nav>
+      <!-- <main class="ml-auto w-9/12 px-3"> -->
+
+      <div
+        id="home-section"
+        class="fade relative -top-[90vh] ml-auto w-[70%] px-2 pb-6 text-whitish opacity-0 lg:mx-auto lg:w-1/2"
+      >
+        <h2
+          class="relative mb-2 text-l font-bold uppercase leading-10 text-sageGreen transition-all ease-in-out after:absolute after:top-1/2 after:ml-2 after:h-[2px] after:w-1/2 after:bg-greyPurple after:content-[''] sm:text-xl"
         >
-        <a
-          href="#experience-section"
-          class="nav-link row-span-1 border-b border-white hover:text-sageGreen"
-          >Experience</a
+          Home
+        </h2>
+        <p class="text-[1.25rem]">
+          I love learning new tech skills, making striking websites, improving
+          my foreign language proficiency (and programming language
+          proficiency!), and teaching people about things they didn't know they
+          were interested in. <br /><br />As a teacher of 5 years, I am
+          passionate about collaborative learning, brainstorming new methods,
+          and being a lifelong student. Teaching has also made me adaptable,
+          strengthened my problem-solving, and made me an excellent time
+          manager. I am enthusiastic about building professional relationships
+          through exchange of knowledge. <br /><br />As a musician of many more,
+          I understand the importance of commitment to your craft, practicing to
+          increase your skillset, and the magic of teamwork.<br /><br />
+          <span class="text-sageGreen"
+            >I hope to soon accept a role as a junior software developer and
+            would love to talk more about any opportunity to do that.</span
+          >
+        </p>
+      </div>
+      <div
+        class="relative -top-[90vh] left-0 right-0 h-px w-full border-b-2 border-darkGrey transition-all duration-1000 ease-in-out"
+      ></div>
+      <div
+        id="my-work-section"
+        class="fade relative -top-[90vh] mt-6 ml-auto flex w-[70%] flex-col px-3 pb-6 text-whitish opacity-0 lg:mx-auto lg:w-1/2"
+      >
+        <h2
+          class="relative mb-2 text-l font-bold uppercase leading-10 text-sageGreen transition-all ease-in-out after:absolute after:top-1/2 after:ml-2 after:h-[2px] after:w-4/12 after:bg-greyPurple after:content-[''] sm:text-xl"
         >
-        <a
-          href="#contact-section"
-          class="nav-link row-span-1 border-b border-white hover:text-sageGreen"
-          >Contact</a
+          My Work
+        </h2>
+
+        <div
+          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex"
         >
-        <a
-          id="click-to-see"
-          href="#"
-          class="nav-link row-span-1 hover:text-sageGreen"
-          ><i class="fa-solid fa-arrow-left text-sm"></i><small> more</small></a
-        >
-      </div>
-      <div id="social-nav" class="mt-10 flex w-8 flex-col pl-[8px]">
-        <a
-          class="my-2 w-8 hover:shadow-[0_5px_6px_rgba(135,62,49,0.2)]"
-          href="https://twitter.com/kmsutula"
-          ><i
-            class="fa-brands fa-twitter fa-2xl text-sageGreen hover:-translate-y-1"
-          ></i
-        ></a>
-
-        <a
-          class="my-2 w-8 hover:shadow-[0_5px_6px_rgba(135,62,49,0.2)]"
-          href="https://www.linkedin.com/in/kaleighsutula"
-          ><i
-            class="fa-brands fa-linkedin-in fa-2xl text-sageGreen hover:-translate-y-1"
-          ></i
-        ></a>
-        <a
-          class="my-2 w-8 hover:shadow-[0_5px_6px_rgba(135,62,49,0.2)]"
-          href=" https://github.com/KmSutula"
-          ><i
-            class="fa-brands fa-github fa-2xl text-sageGreen hover:-translate-y-1"
-          ></i
-        ></a>
-
-        <a
-          class="my-2 w-8 hover:shadow-[0_5px_6px_rgba(135,62,49,0.2)]"
-          href=" https://codepen.io/ksutula"
-          ><i
-            class="fa-brands fa-codepen fa-2xl text-sageGreen hover:-translate-y-1"
-          ></i
-        ></a>
-
-        <a
-          class="mt-2 w-8 hover:shadow-[0_5px_6px_rgba(135,62,49,0.2)]"
-          href=" mailto:kaleighsutula@gmail.com"
-          ><i
-            class="fa-regular fa-envelope fa-2xl text-sageGreen hover:-translate-y-1"
-          ></i
-        ></a>
-      </div>
-    </nav>
-    <!-- <main class="ml-auto w-9/12 px-3"> -->
-
-    <div
-      id="home-section"
-      class="fade relative -top-[334px] ml-auto w-9/12 px-3 pb-6 text-whitish opacity-0 transition-[top] duration-1000 ease-in-out md:-top-[484px] lg:mx-auto lg:w-3/5"
-    >
-      <h2
-        class="relative mb-2 text-l font-bold uppercase leading-8 text-sageGreen transition-all ease-in-out after:absolute after:top-1/2 after:ml-2 after:h-[2px] after:w-1/2 after:bg-greyPurple after:content-[''] sm:text-xl"
-      >
-        Home
-      </h2>
-      <p class="text-[1.25rem]">
-        I love learning new tech skills, making striking websites, improving my
-        foreign language proficiency (and programming language proficiency!),
-        and teaching people about things they didn't know they were interested
-        in. <br /><br />As a teacher of 5 years, I am passionate about
-        collaborative learning, brainstorming new methods, and being a lifelong
-        student. Teaching has also made me adaptable, strengthened my
-        problem-solving, and made me an excellent time manager. I am
-        enthusiastic about building professional relationships through exchange
-        of knowledge. <br /><br />As a musician of many more, I understand the
-        importance of commitment to your craft, practicing to increase your
-        skillset, and the magic of teamwork.<br /><br />
-        <span class="text-sageGreen"
-          >I hope to soon accept a role as a junior software developer and would
-          love to talk more about any opportunity to do that.</span
-        >
-      </p>
-    </div>
-    <div
-      class="relative -top-[334px] left-0 right-0 h-px w-full border-b-2 border-darkGrey transition-all duration-1000 ease-in-out md:-top-[484px]"
-    ></div>
-    <div
-      id="my-work-section"
-      class="fade relative -top-[334px] mt-6 ml-auto flex w-9/12 flex-col px-3 pb-6 text-whitish opacity-0 transition-[top] duration-1000 ease-in-out md:-top-[484px] lg:mx-auto lg:w-3/5"
-    >
-      <h2
-        class="relative mb-2 text-l font-bold uppercase leading-8 text-sageGreen transition-all ease-in-out after:absolute after:top-1/2 after:ml-2 after:h-[2px] after:w-4/12 after:bg-greyPurple after:content-[''] sm:text-xl"
-      >
-        My Work
-      </h2>
-
-      <div
-        class="worksample my-4 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105"
-      >
-        <img
-          src="./assets/composercrawler.png"
-          class="sample my-2 w-full rounded-lg border-2 border-darkGrey object-contain"
-          id="sample1"
-        />
-        <div id="description1">
-          <h2 class="text-m leading-8 text-sageGreen">The Composer Crawler</h2>
-          <small class="mb-2 text-greyPurple"
-            >React - API - JavaScript - HTML - CSS</small
-          >
-          <p>
-            Built with React, the purpose of this site is to help music students
-            quickly research well-known composers. The data for this project was
-            scraped from the Wiki API, and will be expanded upon and linked to a
-            database.
-          </p>
-          <a
-            target="_blank"
-            href="https://github.com/KmSutula/travel-journal"
-            class="text-greyPurple"
-            >See the code here!</a
-          >
-        </div>
-      </div>
-
-      <div
-        class="worksample my-4 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105"
-      >
-        <img
-          src="./assets/travelbookws.png"
-          class="sample my-2 w-full rounded-lg border-2 border-darkGrey object-contain"
-          id="sample2"
-        />
-        <div id="description2">
-          <h2 class="text-m leading-8 text-sageGreen">My Travel Book</h2>
-          <small class="mb-2 text-greyPurple">React - HTML - CSS</small>
-          <p>
-            A static React site, populated dynamically from a local data file.
-            This project uses flexbox and media queries to be responsive at all
-            sizes.
-          </p>
-          <a
-            target="_blank"
-            href="https://github.com/KmSutula/travel-journal"
-            class="text-greyPurple"
-            >See the code here!</a
-          >
-        </div>
-      </div>
-
-      <div
-        class="worksample my-4 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105"
-      >
-        <img
-          src="./assets/postit.png"
-          class="sample my-2 w-full rounded-lg border-2 border-darkGrey object-contain"
-          id="sample3"
-        />
-        <div id="description3">
-          <h2 class="text-m leading-8 text-sageGreen">Post it & Close it</h2>
-          <small class="mb-2 text-greyPurple">JavaScript - HTML - CSS</small>
-          <p>
-            This SPA uses local storage to save user inputs. It serves as a
-            stack of digital sticky notes, where you are able to save tasks
-            related to errands, home, work, and cooking.
-          </p>
-          <a
-            target="_blank"
-            href="https://github.com/KmSutula/post-it-spa"
-            class="text-greyPurple"
-            >See the code here!</a
-          >
-        </div>
-      </div>
-
-      <div
-        class="worksample my-4 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105"
-      >
-        <img
-          src="./assets/pomodoro.png"
-          class="sample my-2 w-full rounded-lg border-2 border-darkGrey object-contain"
-          id="sample5"
-        />
-        <div id="description5">
-          <h2 class="text-m leading-8 text-sageGreen">Pomodoro Timer App</h2>
-          <small class="mb-2 text-greyPurple">jQuery - HTML - CSS</small>
-
-          <p>
-            A single page application that is based on the Pomodoro technique of
-            splitting up work sessions with small breaks. Adjust the time you
-            want to spend working and the amount of time you want to break for,
-            then press the play button to start the work interval! Also includes
-            a pause button and a reset button. A alert sound plays at the end of
-            each timed session. An effective way to study, and I use it myself!
-          </p>
-          <a
-            target="_blank"
-            href="https://github.com/KmSutula/FrontEndLibrariesFCC/tree/main/sessionBreakClock"
-            class="text-greyPurple"
-            >See the code here!</a
-          ><br />
-          <a
-            target="_blank"
-            href="https://codepen.io/ksutula/pen/JjvrejO"
-            class="text-greyPurple"
-            >Try it yourself!</a
-          >
-        </div>
-      </div>
-
-      <div
-        class="worksample my-4 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105"
-      >
-        <img
-          src="./assets/quoteGenerator.png"
-          class="sample my-2 w-full rounded-lg border-2 border-darkGrey object-contain"
-          id="sample6"
-        />
-        <div id="description6">
-          <h2 class="text-m leading-8 text-sageGreen">Quote Generator</h2>
-          <small class="mb-2 text-greyPurple"
-            >API - JavaScript - HTML - CSS</small
-          >
-
-          <p>
-            This site uses vanilla JS, HTML and CSS to generate quotes provided
-            by the Quotable API. There is also functionality built in to tweet
-            any quotes you find particularly inspiring!
-          </p>
-          <a
-            target="_blank"
-            href="https://github.com/KmSutula/FrontEndLibrariesFCC/tree/main/quoteGenerator"
-            class="text-greyPurple"
-            >See the code here!</a
-          ><br />
-          <a
-            target="_blank"
-            href="https://codepen.io/ksutula/pen/NWYmdBp"
-            class="text-greyPurple"
-            >Try it yourself!</a
-          >
-        </div>
-      </div>
-
-      <div
-        class="worksample my-4 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105"
-      >
-        <!-- <a class="samplelink" href="www.kaleighsutula.com"><img src="../assets/kswebsite.png" class="sample" id="sample1"></a> -->
-        <img
-          src="./assets/kswebsite.png"
-          class="sample my-2 w-full rounded-lg border-2 border-darkGrey object-contain"
-          id="sample7"
-        />
-        <div id="description7">
-          <h2 class="text-m leading-8 text-sageGreen">
-            Personal Website / Portfolio
-          </h2>
-          <small class="mb-2 text-greyPurple"
-            >Tailwind - jQuery - HTML - CSS - Azure</small
-          >
-
-          <p>
-            Built mobile first, this site serves as my portfolio and personal
-            website. It was designed in Figma with a color palette inspired by
-            the harvest moon. My goal was to make it clean and beautiful, while
-            still adding fun features and plenty of personality. Features an
-            interactive side navigation, mobile-first responsive layout, and a
-            contact form powered by Azure functions.
-          </p>
-          <a
-            target="_blank"
-            href="https://github.com/KmSutula/kswebsite"
-            class="text-greyPurple"
-            >See the code here!</a
-          >
-        </div>
-      </div>
-
-      <div
-        class="worksample my-4 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105"
-      >
-        <img
-          src="./assets/drumKit.png"
-          class="sample my-2 w-full rounded-lg border-2 border-darkGrey object-contain"
-          id="sample8"
-        />
-        <div id="description8">
-          <h2 class="text-m leading-8 text-sageGreen">Drum Kit</h2>
-          <small class="mb-2 text-greyPurple">JavaScript - HTML - CSS</small>
-
-          <p>
-            A simple page that displays a drumkit as a subset of the keyboard.
-            This page is responsive to mouse clicks and keyboard events, and the
-            sound display changes with each input.
-          </p>
-          <a
-            target="_blank"
-            href="https://github.com/KmSutula/FrontEndLibrariesFCC/tree/main/drumkit"
-            class="text-greyPurple"
-            >See the code here!</a
-          ><br />
-          <a
-            target="_blank"
-            href="https://codepen.io/ksutula/pen/jOxrEOm"
-            class="text-greyPurple"
-            >Try it yourself!</a
-          >
-        </div>
-      </div>
-    </div>
-    <div
-      class="relative -top-[334px] left-0 right-0 h-px w-full border-b-2 border-darkGrey transition-all duration-1000 ease-in-out md:-top-[484px]"
-    ></div>
-
-    <div
-      id="experience-section"
-      class="fade relative -top-[334px] ml-auto mt-6 flex w-9/12 flex-col px-3 pb-6 text-whitish opacity-0 transition-[top] duration-1000 ease-in-out md:-top-[484px] lg:mx-auto lg:w-3/5"
-    >
-      <h2
-        class="relative mb-6 text-l font-bold uppercase leading-8 text-sageGreen transition-all ease-in-out after:absolute after:top-1/2 after:ml-2 after:h-[2px] after:w-1/4 after:bg-greyPurple after:content-[''] sm:text-xl"
-      >
-        Experience
-      </h2>
-
-      <h3
-        class="flexheading text-center text-m transition-all ease-in-out sm:text-xl"
-      >
-        Skills
-      </h3>
-      <div
-        class="skills my-3 mr-3 w-full border-y-2 border-darkGrey p-3 text-greyPurple transition-all ease-in-out lg:grid lg:max-h-[700px] lg:grid-cols-2 lg:grid-rows-[1fr_2fr]"
-      >
-        <div>
-          <h4
-            class="font-bold text-whitish transition-all ease-in-out sm:text-l lg:text-center"
-          >
-            Programming Languages
-          </h4>
-          <ul
-            class="list-none transition-all ease-in-out sm:text-m lg:text-center"
-          >
-            <li>JavaScript ES6</li>
-            <li>TypeScript</li>
-            <li>C#</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Sass</li>
-          </ul>
-        </div>
-        <div>
-          <h4
-            class="mt-3 text-right font-bold text-whitish transition-all ease-in-out sm:text-l lg:mt-0 lg:text-center"
-          >
-            Frameworks & Libraries
-          </h4>
-          <ul
-            class="list-none text-right transition-all ease-in-out sm:text-m lg:text-center"
-          >
-            <li>React</li>
-            <li>Redux</li>
-            <li>Angular</li>
-            <li>jQuery</li>
-            <li>Tailwind</li>
-            <li>Bootstrap</li>
-            <li>Express</li>
-            <li>Node.js</li>
-            <li>Axios</li>
-          </ul>
-        </div>
-        <div>
-          <h4
-            class="mt-3 font-bold text-whitish transition-all ease-in-out sm:text-l lg:text-center"
-          >
-            Design Tools
-          </h4>
-          <ul
-            class="list-none transition-all ease-in-out sm:text-m lg:text-center"
-          >
-            <li>Figma</li>
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-            <li>Balsamiq</li>
-            <li>Adobe Illustrator</li>
-          </ul>
-        </div>
-        <div>
-          <h4
-            class="mt-3 text-right font-bold text-whitish transition-all ease-in-out sm:text-l lg:text-center"
-          >
-            Databases
-          </h4>
-          <ul
-            class="list-none text-right transition-all ease-in-out sm:text-m lg:text-center"
-          >
-            <li>MongoDB</li>
-            <li>Supabase</li>
-            <li>PostgreSQL</li>
-          </ul>
-        </div>
-      </div>
-      <h3
-        class="flexheading text-center text-m transition-all ease-in-out sm:text-xl"
-      >
-        Programs
-      </h3>
-
-      <ul class="flex flex-col">
-        <!-- <li class="my-4 border-b-2 border-greyPurple"> -->
-        <ul class="border-b-[1px] border-greyPurple">
-          <li>Udemy</li>
-
-          <li class="text-sageGreen sm:text-m">
-            The Web Developer Bootcamp 2022
-          </li>
-          <li class="mb-3 text-right text-sm uppercase">In Progress</li>
-        </ul>
-        <ul class="border-b-[1px] border-greyPurple">
-          <li class="mt-3">freeCodeCamp</li>
-          <li class="text-sageGreen sm:text-m">Responsive Web Design</li>
-          <li class="text-right text-sm uppercase">
-            <a
-              href="https://freecodecamp.org/certification/sutulip/responsive-web-design"
-              target="_blank"
-              class="text-right text-greyPurple"
-              >(Certification)</a
-            >
-          </li>
-          <li class="mb-3 text-right text-sm uppercase">Completed July '22</li>
-        </ul>
-        <ul class="border-b-[1px] border-greyPurple">
-          <li class="mt-3">freeCodeCamp</li>
-          <li class="text-sageGreen sm:text-m">
-            JavaScript Algorithims & Data Structures
-          </li>
-          <li class="text-right text-sm uppercase">
-            <a
-              href="https://freecodecamp.org/certification/sutulip/javascript-algorithms-and-data-structures"
-              target="_blank"
-              class="text-right text-greyPurple"
-              >(Certification)</a
-            >
-          </li>
-          <li class="mb-3 text-right text-sm uppercase">
-            Completed August '22
-          </li>
-        </ul>
-        <ul class="border-b-[1px] border-greyPurple">
-          <li class="mt-3">freeCodeCamp</li>
-          <li class="text-sageGreen sm:text-m">
-            Front End Development Libraries
-          </li>
-          <li class="text-right text-sm uppercase">
-            <a
-              href="https://www.freecodecamp.org/certification/sutulip/front-end-development-libraries"
-              target="_blank"
-              class="text-right text-greyPurple"
-              >(Certification)</a
-            >
-          </li>
-
-          <li class="mb-3 text-right text-sm uppercase">
-            Completed September '22
-          </li>
-        </ul>
-        <ul class="border-b-[1px] border-greyPurple">
-          <li class="mt-3">edX</li>
-          <li class="text-sageGreen sm:text-m">HTML5 & CSS Fundamentals</li>
-          <li class="mb-3 text-right text-sm uppercase">Completed July '22</li>
-        </ul>
-        <ul class="border-b-[1px] border-greyPurple">
-          <li class="mt-3">WesBos.com</li>
-          <li class="text-sageGreen sm:text-m">JavaScript30</li>
-          <li class="mb-3 text-right text-sm uppercase">
-            Completed September '22
-          </li>
-        </ul>
-        <ul class="border-b-[1px] border-greyPurple">
-          <li class="mt-3">Udemy</li>
-          <li class="text-sageGreen sm:text-m">50 Projects in 50 Days</li>
-          <li class="mb-3 text-right text-sm uppercase">In Progress</li>
-        </ul>
-        <ul class="border-b-[1px] border-greyPurple">
-          <li class="mt-3">Scrimba</li>
-          <li class="text-sageGreen sm:text-m">Learn React for Free</li>
-          <li class="mb-3 text-right text-sm uppercase">
-            Completed October '22
-          </li>
-        </ul>
-      </ul>
-      <a
-        class="mx-auto"
-        href="/assets/KaleighSutula - Resume 1.pdf"
-        target="_blank"
-      >
-        <button
-          class="mt-3 w-40 border-2 border-sageGreen p-3 font-bold uppercase text-whitish transition-all ease-in-out hover:scale-105 hover:bg-darkGrey hover:bg-opacity-80"
-        >
-          Resume
-        </button>
-      </a>
-    </div>
-    <div
-      class="relative -top-[334px] left-0 right-0 h-px w-full border-b-2 border-darkGrey transition-all duration-1000 ease-in-out md:-top-[484px]"
-    ></div>
-
-    <div
-      id="contact-section"
-      class="fade relative -top-[334px] mt-6 ml-auto flex w-9/12 flex-col px-3 pb-6 text-whitish opacity-0 transition-[top] duration-1000 ease-in-out md:-top-[484px] lg:mx-auto lg:w-3/5"
-    >
-      <h2
-        class="relative mb-2 text-l font-bold uppercase leading-8 text-sageGreen transition-all ease-in-out after:absolute after:top-1/2 after:ml-2 after:h-[2px] after:w-1/2 after:bg-greyPurple after:content-[''] sm:text-xl"
-      >
-        Contact
-      </h2>
-      <p class="my-4 text-center">
-        Tell me your most niche app idea, what your ideal website looks like, or
-        any other projects you need help with.
-      </p>
-      <form
-        class="mx-auto flex w-[250px] flex-col transition-all ease-in-out md:w-[600px]"
-        onsubmit="return false"
-        id="contact-form"
-      >
-        <div class="mb-2 flex flex-col">
-          <label class="font-bold uppercase text-whitish" for="fullname">
-            Name:
-          </label>
-          <input
-            class="w-full border-b-2 bg-darkGrey p-2 transition-all ease-in focus:border-b-2 focus:border-sageGreen focus:outline-none"
-            type="text"
-            name="fullname"
-            id="fullname"
-            required
+          <img
+            src="./assets/composercrawler.png"
+            class="sample my-2 w-full rounded-lg object-contain xl:w-1/2"
+            id="sample1"
           />
+          <div id="description1" class="lg:mt-2 lg:px-3">
+            <h2 class="text-m leading-8 text-sageGreen">
+              The Composer Crawler
+            </h2>
+            <small class="mb-2 text-greyPurple"
+              >React - Supabase - API - JavaScript - HTML - CSS</small
+            >
+            <p>
+              Built with React with data served from Supabase, the purpose of
+              this site is to help music students quickly research well-known
+              composers. The unstructured data for this project was scraped from
+              the Wiki API, and was transformed with a mixture of JavaScript and
+              manual editing.
+            </p>
+            <a
+              target="_blank"
+              href="https://www.thecomposercrawler.com"
+              class="text-greyPurple"
+            >
+              Try it yourself!</a
+            ><br />
+            <a
+              target="_blank"
+              href="https://github.com/KmSutula/travel-journal"
+              class="text-greyPurple"
+              >See the code here!</a
+            >
+          </div>
         </div>
-        <div class="mb-2 flex flex-col">
-          <label class="font-bold uppercase text-whitish" for="email"
-            >Email:</label
-          >
-          <input
-            class="w-full border-b-2 bg-darkGrey p-2 transition-all ease-in focus:border-b-2 focus:border-sageGreen focus:outline-none"
-            type="email"
-            name="email"
-            id="email"
-            required
-          />
-        </div>
-        <textarea
-          class="mb-2 mt-5 h-28 w-full border-b-2 bg-darkGrey p-2 transition-all ease-in focus:border-b-2 focus:border-sageGreen focus:outline-none"
-          name="message"
-          placeholder="Enter message here"
-          id="textarea"
-          required
-        ></textarea>
-        <button
-          id="sendButton"
-          class="my-3 mx-auto w-40 border-2 border-sageGreen p-3 font-bold uppercase text-whitish transition-all ease-in-out hover:scale-105 hover:bg-darkGrey hover:bg-opacity-80"
+
+        <div
+          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex"
         >
-          Submit</button
-        ><span id="acceptedText" class="text-center text-sm text-white"></span>
-      </form>
-    </div>
+          <img
+            src="./assets/travelbookws.png"
+            class="sample my-2 w-full rounded-lg object-contain xl:w-1/2"
+            id="sample2"
+          />
+          <div id="description2" class="lg:mt-2 lg:px-3">
+            <h2 class="text-m leading-8 text-sageGreen">My Travel Book</h2>
+            <small class="mb-2 text-greyPurple">React - HTML - CSS</small>
+            <p>
+              A static React site, populated dynamically from a local data file.
+              This project uses flexbox and media queries to be responsive at
+              all sizes.
+            </p>
+            <a
+              target="_blank"
+              href="https://github.com/KmSutula/travel-journal"
+              class="text-greyPurple"
+              >See the code here!</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex"
+        >
+          <img
+            src="./assets/postit.png"
+            class="sample my-2 w-full rounded-lg object-contain xl:w-1/2"
+            id="sample3"
+          />
+          <div id="description3" class="lg:mt-2 lg:px-3">
+            <h2 class="text-m leading-8 text-sageGreen">Post it & Close it</h2>
+            <small class="mb-2 text-greyPurple">JavaScript - HTML - CSS</small>
+            <p>
+              This SPA uses local storage to save user inputs. It serves as a
+              stack of digital sticky notes, where you are able to save tasks
+              related to errands, home, work, and cooking.
+            </p>
+            <a
+              target="_blank"
+              href="https://github.com/KmSutula/post-it-spa"
+              class="text-greyPurple"
+              >See the code here!</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex"
+        >
+          <img
+            src="./assets/pomodoro.png"
+            class="sample my-2 w-full rounded-lg object-contain xl:w-1/2"
+            id="sample5"
+          />
+          <div id="description5" class="lg:mt-2 lg:px-3">
+            <h2 class="text-m leading-8 text-sageGreen">Pomodoro Timer App</h2>
+            <small class="mb-2 text-greyPurple">jQuery - HTML - CSS</small>
+
+            <p>
+              A single page application that is based on the Pomodoro technique
+              of splitting up work sessions with small breaks. Adjust the time
+              you want to spend working and the amount of time you want to break
+              for, then press the play button to start the work interval! Also
+              includes a pause button and a reset button. A alert sound plays at
+              the end of each timed session. An effective way to study, and I
+              use it myself!
+            </p>
+            <a
+              target="_blank"
+              href="https://github.com/KmSutula/FrontEndLibrariesFCC/tree/main/sessionBreakClock"
+              class="text-greyPurple"
+              >See the code here!</a
+            ><br />
+            <a
+              target="_blank"
+              href="https://codepen.io/ksutula/pen/JjvrejO"
+              class="text-greyPurple"
+              >Try it yourself!</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex"
+        >
+          <img
+            src="./assets/quoteGenerator.png"
+            class="sample my-2 w-full rounded-lg object-contain xl:w-1/2"
+            id="sample6"
+          />
+          <div id="description6" class="lg:mt-2 lg:px-3">
+            <h2 class="text-m leading-8 text-sageGreen">Quote Generator</h2>
+            <small class="mb-2 text-greyPurple"
+              >API - JavaScript - HTML - CSS</small
+            >
+
+            <p>
+              This site uses vanilla JS, HTML and CSS to generate quotes
+              provided by the Quotable API. There is also functionality built in
+              to tweet any quotes you find particularly inspiring!
+            </p>
+            <a
+              target="_blank"
+              href="https://github.com/KmSutula/FrontEndLibrariesFCC/tree/main/quoteGenerator"
+              class="text-greyPurple"
+              >See the code here!</a
+            ><br />
+            <a
+              target="_blank"
+              href="https://codepen.io/ksutula/pen/NWYmdBp"
+              class="text-greyPurple"
+              >Try it yourself!</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex"
+        >
+          <!-- <a class="samplelink" href="www.kaleighsutula.com"><img src="../assets/kswebsite.png" class="sample" id="sample1"></a> -->
+          <img
+            src="./assets/kswebsite.png"
+            class="sample my-2 w-full rounded-lg object-contain xl:w-1/2"
+            id="sample7"
+          />
+          <div id="description7" class="lg:mt-2 lg:px-3">
+            <h2 class="text-m leading-8 text-sageGreen">
+              Personal Website / Portfolio
+            </h2>
+            <small class="mb-2 text-greyPurple"
+              >Tailwind - jQuery - HTML - CSS - Azure</small
+            >
+
+            <p>
+              Built mobile first, this site serves as my portfolio and personal
+              website. It was designed in Figma with a color palette inspired by
+              the harvest moon. My goal was to make it clean and beautiful,
+              while still adding fun features and plenty of personality.
+              Features an interactive side navigation, mobile-first responsive
+              layout, and a contact form powered by Azure functions.
+            </p>
+            <a
+              target="_blank"
+              href="https://github.com/KmSutula/kswebsite"
+              class="text-greyPurple"
+              >See the code here!</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex"
+        >
+          <img
+            src="./assets/drumKit.png"
+            class="sample my-2 w-full rounded-lg object-contain xl:w-1/2"
+            id="sample8"
+          />
+          <div id="description8" class="lg:mt-2 lg:px-3">
+            <h2 class="text-m leading-8 text-sageGreen">Drum Kit</h2>
+            <small class="mb-2 text-greyPurple">JavaScript - HTML - CSS</small>
+
+            <p>
+              A simple page that displays a drumkit as a subset of the keyboard.
+              This page is responsive to mouse clicks and keyboard events, and
+              the sound display changes with each input.
+            </p>
+            <a
+              target="_blank"
+              href="https://github.com/KmSutula/FrontEndLibrariesFCC/tree/main/drumkit"
+              class="text-greyPurple"
+              >See the code here!</a
+            ><br />
+            <a
+              target="_blank"
+              href="https://codepen.io/ksutula/pen/jOxrEOm"
+              class="text-greyPurple"
+              >Try it yourself!</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative -top-[90vh] left-0 right-0 h-px w-full border-b-2 border-darkGrey transition-all duration-1000 ease-in-out"
+      ></div>
+
+      <div
+        id="experience-section"
+        class="fade relative -top-[90vh] ml-auto mt-6 flex w-[70%] flex-col px-3 pb-6 text-whitish opacity-0 lg:mx-auto lg:w-1/2"
+      >
+        <h2
+          class="relative mb-6 text-l font-bold uppercase leading-10 text-sageGreen transition-all ease-in-out after:absolute after:top-1/2 after:ml-2 after:h-[2px] after:w-1/4 after:bg-greyPurple after:content-[''] sm:text-xl"
+        >
+          Experience
+        </h2>
+
+        <h3
+          class="flexheading text-center text-m transition-all ease-in-out sm:text-xl"
+        >
+          Skills
+        </h3>
+        <div
+          class="skills my-3 mr-3 w-full border-y-2 border-darkGrey p-3 text-greyPurple transition-all ease-in-out lg:grid lg:max-h-[700px] lg:grid-cols-2 lg:grid-rows-[1fr_2fr]"
+        >
+          <div>
+            <h4
+              class="font-bold text-whitish transition-all ease-in-out sm:text-l lg:text-center"
+            >
+              Programming Languages
+            </h4>
+            <ul
+              class="list-none transition-all ease-in-out sm:text-m lg:text-center"
+            >
+              <li>JavaScript ES6</li>
+              <li>TypeScript</li>
+              <li>C#</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Sass</li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="mt-3 text-right font-bold text-whitish transition-all ease-in-out sm:text-l lg:mt-0 lg:text-center"
+            >
+              Frameworks & Libraries
+            </h4>
+            <ul
+              class="list-none text-right transition-all ease-in-out sm:text-m lg:text-center"
+            >
+              <li>React</li>
+              <li>Redux</li>
+              <li>Angular</li>
+              <li>jQuery</li>
+              <li>Tailwind</li>
+              <li>Bootstrap</li>
+              <li>Express</li>
+              <li>Node.js</li>
+              <li>Axios</li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="mt-3 font-bold text-whitish transition-all ease-in-out sm:text-l lg:text-center"
+            >
+              Design Tools
+            </h4>
+            <ul
+              class="list-none transition-all ease-in-out sm:text-m lg:text-center"
+            >
+              <li>Figma</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Balsamiq</li>
+              <li>Adobe Illustrator</li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="mt-3 text-right font-bold text-whitish transition-all ease-in-out sm:text-l lg:text-center"
+            >
+              Databases
+            </h4>
+            <ul
+              class="list-none text-right transition-all ease-in-out sm:text-m lg:text-center"
+            >
+              <li>MongoDB</li>
+              <li>Supabase</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+        </div>
+        <h3
+          class="flexheading text-center text-m transition-all ease-in-out sm:text-xl"
+        >
+          Programs
+        </h3>
+
+        <ul class="flex flex-col">
+          <!-- <li class="my-4 border-b-2 border-greyPurple"> -->
+          <ul class="border-b-[1px] border-greyPurple">
+            <li>Udemy</li>
+
+            <li class="text-sageGreen sm:text-m">
+              The Web Developer Bootcamp 2022
+            </li>
+            <li class="mb-3 text-right text-sm uppercase">In Progress</li>
+          </ul>
+          <ul class="border-b-[1px] border-greyPurple">
+            <li class="mt-3">freeCodeCamp</li>
+            <li class="text-sageGreen sm:text-m">Responsive Web Design</li>
+            <li class="text-right text-sm uppercase">
+              <a
+                href="https://freecodecamp.org/certification/sutulip/responsive-web-design"
+                target="_blank"
+                class="text-right text-greyPurple"
+                >(Certification)</a
+              >
+            </li>
+            <li class="mb-3 text-right text-sm uppercase">
+              Completed July '22
+            </li>
+          </ul>
+          <ul class="border-b-[1px] border-greyPurple">
+            <li class="mt-3">freeCodeCamp</li>
+            <li class="text-sageGreen sm:text-m">
+              JavaScript Algorithims & Data Structures
+            </li>
+            <li class="text-right text-sm uppercase">
+              <a
+                href="https://freecodecamp.org/certification/sutulip/javascript-algorithms-and-data-structures"
+                target="_blank"
+                class="text-right text-greyPurple"
+                >(Certification)</a
+              >
+            </li>
+            <li class="mb-3 text-right text-sm uppercase">
+              Completed August '22
+            </li>
+          </ul>
+          <ul class="border-b-[1px] border-greyPurple">
+            <li class="mt-3">freeCodeCamp</li>
+            <li class="text-sageGreen sm:text-m">
+              Front End Development Libraries
+            </li>
+            <li class="text-right text-sm uppercase">
+              <a
+                href="https://www.freecodecamp.org/certification/sutulip/front-end-development-libraries"
+                target="_blank"
+                class="text-right text-greyPurple"
+                >(Certification)</a
+              >
+            </li>
+
+            <li class="mb-3 text-right text-sm uppercase">
+              Completed September '22
+            </li>
+          </ul>
+          <ul class="border-b-[1px] border-greyPurple">
+            <li class="mt-3">edX</li>
+            <li class="text-sageGreen sm:text-m">HTML5 & CSS Fundamentals</li>
+            <li class="mb-3 text-right text-sm uppercase">
+              Completed July '22
+            </li>
+          </ul>
+          <ul class="border-b-[1px] border-greyPurple">
+            <li class="mt-3">WesBos.com</li>
+            <li class="text-sageGreen sm:text-m">JavaScript30</li>
+            <li class="mb-3 text-right text-sm uppercase">
+              Completed September '22
+            </li>
+          </ul>
+          <ul class="border-b-[1px] border-greyPurple">
+            <li class="mt-3">Udemy</li>
+            <li class="text-sageGreen sm:text-m">50 Projects in 50 Days</li>
+            <li class="mb-3 text-right text-sm uppercase">In Progress</li>
+          </ul>
+          <ul class="border-b-[1px] border-greyPurple">
+            <li class="mt-3">Scrimba</li>
+            <li class="text-sageGreen sm:text-m">Learn React for Free</li>
+            <li class="mb-3 text-right text-sm uppercase">
+              Completed October '22
+            </li>
+          </ul>
+        </ul>
+        <a
+          class="mx-auto"
+          href="/assets/KaleighSutula - Resume 1.pdf"
+          target="_blank"
+        >
+          <button
+            class="mt-3 w-40 border-2 border-sageGreen p-3 font-bold uppercase text-whitish transition-all ease-in-out hover:scale-105 hover:bg-darkGrey hover:bg-opacity-80"
+          >
+            Resume
+          </button>
+        </a>
+      </div>
+      <div
+        class="relative -top-[90vh] left-0 right-0 h-px w-full border-b-2 border-darkGrey transition-all duration-1000 ease-in-out"
+      ></div>
+
+      <div
+        id="contact-section"
+        class="fade relative -top-[90vh] mt-6 ml-auto flex w-[70%] flex-col px-3 pb-6 text-whitish opacity-0 lg:mx-auto lg:w-3/5"
+      >
+        <h2
+          class="relative mb-2 text-l font-bold uppercase leading-10 text-sageGreen transition-all ease-in-out after:absolute after:top-1/2 after:ml-2 after:h-[2px] after:w-1/2 after:bg-greyPurple after:content-[''] sm:text-xl"
+        >
+          Contact
+        </h2>
+        <p class="my-4 text-center">
+          Tell me your most niche app idea, what your ideal website looks like,
+          or any other projects you need help with.
+        </p>
+        <form
+          class="mx-auto flex w-full flex-col transition-all ease-in-out md:w-[600px]"
+          onsubmit="return false"
+          id="contact-form"
+        >
+          <div class="mb-2 flex flex-col">
+            <label class="font-bold uppercase text-whitish" for="fullname">
+              Name:
+            </label>
+            <input
+              class="w-full border-b-2 bg-darkGrey p-2 transition-all ease-in focus:border-b-2 focus:border-sageGreen focus:outline-none"
+              type="text"
+              name="fullname"
+              id="fullname"
+              required
+            />
+          </div>
+          <div class="mb-2 flex flex-col">
+            <label class="font-bold uppercase text-whitish" for="email"
+              >Email:</label
+            >
+            <input
+              class="w-full border-b-2 bg-darkGrey p-2 transition-all ease-in focus:border-b-2 focus:border-sageGreen focus:outline-none"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <textarea
+            class="mb-2 mt-5 h-28 w-full border-b-2 bg-darkGrey p-2 transition-all ease-in focus:border-b-2 focus:border-sageGreen focus:outline-none"
+            name="message"
+            placeholder="Enter message here"
+            id="textarea"
+            required
+          ></textarea>
+          <button
+            id="sendButton"
+            class="my-3 mx-auto w-40 border-2 border-sageGreen p-3 font-bold uppercase text-whitish transition-all ease-in-out hover:scale-105 hover:bg-darkGrey hover:bg-opacity-80"
+          >
+            Submit</button
+          ><span
+            id="acceptedText"
+            class="text-center text-sm text-white"
+          ></span>
+        </form>
+      </div>
+    </main>
     <div
       id="footer"
       class="absolute right-0 bottom-0 p-2 text-m font-bold uppercase text-greyPurple opacity-0"

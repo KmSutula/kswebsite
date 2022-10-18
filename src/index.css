@@ -190,15 +190,15 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #fff;
+  background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #606d5d;
+  background: #cd7e30;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(118, 118, 118);
+  background: #222830;
 }

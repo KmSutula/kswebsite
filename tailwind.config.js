@@ -10,7 +10,7 @@ module.exports = {
         accent: ["Rubik Glitch", ...defaultTheme.fontFamily.mono],
       },
       colors: {
-        sageGreen: "#E56B54",
+        sageGreen: "#cd7e30",
         darkBlack: "#10131D",
         greyPurple: "#7D7C8F",
         darkGrey: "#222830",
