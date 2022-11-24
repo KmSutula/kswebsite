@@ -1325,4 +1325,12 @@ video {
   .xl\:w-1\/2 {
     width: 50%;
   }
+
+  .xl\:items-center {
+    align-items: center;
+  }
+
+  .xl\:justify-items-center {
+    justify-items: center;
+  }
 }

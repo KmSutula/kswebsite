@@ -16,13 +16,13 @@ $(window).on("load", function () {
     $("body").removeClass("h-full overflow-hidden");
     $("html").removeClass("h-full overflow-hidden");
     $(footer).addClass("opacity-50").removeClass("opacity-0");
-  }, 10500);
+  }, 8500);
 
   setTimeout(function () {
     $(feDev).addClass("opacity-100 flipY").removeClass("opacity-0");
     $(opera).addClass("opacity-80").removeClass("opacity-0");
     $(dogMom).addClass("opacity-60").removeClass("opacity-0");
-  }, 7500);
+  }, 6500);
 });
 
 $(document).ready(function () {
