@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <!-- <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="mywork.css" /> -->
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -55,7 +54,7 @@
     </div>
     <div
       id="hero"
-      class="relative mx-auto my-12 h-auto w-11/12 overflow-hidden border-x-2 border-solid border-x-sageGreen border-opacity-70 bg-darkBlack px-6 py-8 text-white shadow-[0px_0px_8px_0px_rgba(255,255,255,0.3)] transition-all ease-in-out sm:w-1/2 sm:px-5"
+      class="relative mx-auto my-12 h-auto w-11/12 overflow-hidden border-x-2 border-solid border-x-sageGreen border-opacity-70 bg-darkBlack px-6 py-8 text-white shadow-[0px_0px_8px_0px_rgba(255,255,255,0.3)] transition-all ease-in-out sm:w-3/5 sm:px-5 lg:w-1/2"
     >
       <div class="sky">
         <div class="star"></div>
@@ -108,73 +107,53 @@
       </div>
     </div>
 
-    <!-- <div
-      id="more"
-      class="top-68 absolute hidden h-fit w-1/4 bg-white p-2 transition-all"
-    >
-      <img
-        src="../assets/ksheadshot.jpg"
-        id="headshot"
-        alt="Professional
-      Headshot of Kaleigh Sutula"
-      />
-      <h3 class="text-darkPurple font-serif text-base">
-        Things I do <br />(other than tech)
-      </h3>
-      <ul class="text-center text-sm">
-        <li class="fun-thing">disc golf</li>
-        <li class="fun-thing">hiking</li>
-        <li class="fun-thing">write poetry</li>
-        <li class="fun-thing">gaming</li>
-        <li class="fun-thing">spin class!</li>
-        <li class="fun-thing">camping</li>
-        <li class="fun-thing">checking out art museums</li>
-        <li class="fun-thing">opera singing</li>
-        <li class="fun-thing">volleyball in the backyard</li>
-        <li class="fun-thing">puzzles</li>
-        <li class="fun-thing">rock climbing</li>
-        <li class="fun-thing">baking cookies</li>
-        <li class="fun-thing">learning new languages</li>
-        <li class="fun-thing">hanging with my pup, Freya</li>
-      </ul>
-    </div> -->
     <main class="relative">
       <nav
-        class="fade sticky top-10 bottom-10 z-50 flex h-[90vh] w-[30%] flex-col justify-between overflow-hidden opacity-0 lg:w-2/12"
+        class="fade sticky top-10 bottom-10 z-50 flex h-[90vh] w-[30%] flex-col opacity-0 lg:w-2/12"
       >
         <div
           id="side-nav"
-          class="relative grid w-full max-w-[100px] rounded-r-lg bg-greyPurple pl-[4px] uppercase text-white transition-all ease-in-out sm:max-w-[200px] sm:text-m md:text-l"
+          class="grid w-full max-w-[150px] rounded-r-lg bg-darkGrey text-center text-[18px] uppercase text-white transition-all ease-in-out sm:max-w-[200px] md:relative md:text-[20px] xl:text-l"
         >
           <a
+            id="link-home"
             href="#home-section"
             class="nav-link row-span-1 border-b border-white hover:text-sageGreen"
             >Home</a
           >
           <a
+            id="link-work"
             href="#my-work-section"
             class="nav-link row-span-1 border-b border-white hover:text-sageGreen"
             >My Work</a
           >
           <a
+            id="link-experience"
             href="#experience-section"
             class="nav-link row-span-1 border-b border-white hover:text-sageGreen"
             >Experience</a
           >
           <a
+            id="link-contact"
             href="#contact-section"
             class="nav-link row-span-1 hover:text-sageGreen"
             >Contact</a
           >
-          <!-- <a
+          <a
             id="click-to-see"
-            href="#"
-            class="nav-link row-span-1 hover:text-sageGreen"
+            class="nav-link row-span-1 cursor-pointer hover:text-sageGreen"
             ><i class="fa-solid fa-arrow-left text-sm"></i
             ><small> more</small></a
-          > -->
+          >
         </div>
-        <div id="social-nav" class="relative flex w-8 flex-col pl-[8px]">
+        <div
+          id="interactive-nav"
+          class="w-full max-w-[150px] -translate-x-full justify-self-start rounded-r-lg bg-darkGrey py-4 px-2 text-whitish transition-transform duration-500 ease-in-out sm:max-w-[200px]"
+        ></div>
+        <div
+          id="social-nav"
+          class="relative mt-auto flex w-8 flex-col pl-[8px]"
+        >
           <a
             class="my-2 w-8 hover:shadow-[0_5px_6px_rgba(135,62,49,0.2)]"
             href="https://twitter.com/kmsutula"
@@ -219,25 +198,25 @@
 
       <div
         id="home-section"
-        class="fade relative -top-[90vh] ml-auto w-[70%] px-2 pb-6 text-whitish opacity-0 lg:mx-auto lg:w-1/2"
+        class="main-section fade relative -top-[90vh] ml-auto w-[70%] px-2 pb-6 text-whitish opacity-0 lg:mx-auto lg:w-1/2"
       >
         <h2
           class="relative mb-2 text-l font-bold uppercase leading-10 text-sageGreen transition-all ease-in-out after:absolute after:top-1/2 after:ml-2 after:h-[2px] after:w-1/2 after:bg-greyPurple after:content-[''] sm:text-xl"
         >
           Home
         </h2>
-        <p class="text-[1.25rem]">
-          I love learning new tech skills, making striking websites, improving
-          my foreign language proficiency (and programming language
-          proficiency!), and teaching people about things they didn't know they
-          were interested in. <br /><br />As a teacher of 5 years, I am
-          passionate about collaborative learning, brainstorming new methods,
-          and being a lifelong student. Teaching has also made me adaptable,
-          strengthened my problem-solving, and made me an excellent time
-          manager. I am enthusiastic about building professional relationships
-          through exchange of knowledge. <br /><br />As a musician of many more,
-          I understand the importance of commitment to your craft, practicing to
-          increase your skillset, and the magic of teamwork.<br /><br />
+        <p class="md:text-[1.25rem]">
+          I love learning new tech skills, making striking websites, and
+          teaching people about things they didn't know they were interested in.
+          <br /><br />As a teacher of 5 years, I am passionate about
+          collaborative learning, brainstorming new methods to tackle
+          complicated or recurring problems, and being a lifelong student.
+          Teaching has also made me adaptable, strengthened my problem-solving,
+          and made me an excellent time manager. I am enthusiastic about
+          building professional relationships through exchange of knowledge.
+          <br /><br />As a musician of many more, I understand the importance of
+          commitment to your craft, practicing to increase your skillset, and
+          the magic of teamwork.<br /><br />
           <span class="text-sageGreen"
             >I hope to soon accept a role as a junior software developer and
             would love to talk more about any opportunity to do that.</span
@@ -249,7 +228,7 @@
       ></div>
       <div
         id="my-work-section"
-        class="fade relative -top-[90vh] mt-6 ml-auto flex w-[70%] flex-col px-3 pb-6 text-whitish opacity-0 lg:mx-auto lg:w-1/2"
+        class="main-section fade relative -top-[90vh] mt-6 ml-auto flex w-[70%] flex-col px-3 pb-6 text-whitish opacity-0 lg:mx-auto lg:w-1/2"
       >
         <h2
           class="relative mb-2 text-l font-bold uppercase leading-10 text-sageGreen transition-all ease-in-out after:absolute after:top-1/2 after:ml-2 after:h-[2px] after:w-4/12 after:bg-greyPurple after:content-[''] sm:text-xl"
@@ -257,19 +236,31 @@
           My Work
         </h2>
 
-        <div
-          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex xl:items-center xl:justify-items-center"
-        >
-          <a
-            class="w-full xl:w-1/2"
-            href="https://www.thecomposercrawler.com"
-            target="_blank"
-            ><img
+        <div class="worksample">
+          <div class="media-links relative w-full flex-1">
+            <img
               src="./assets/composercrawler.png"
               class="sample my-2 w-full rounded-lg object-contain"
               id="sample1"
-          /></a>
-          <div id="description1" class="lg:mt-2 lg:px-3 xl:w-1/2">
+              alt="Screenshot of Composer Crawler project"
+            />
+            <div class="overlay">
+              <a
+                target="_blank"
+                href="https://github.com/KmSutula/The-Composer-Crawler"
+                class="link mb-2"
+                >view code</a
+              >
+              <a
+                target="_blank"
+                href="https://www.thecomposercrawler.com"
+                class="link"
+              >
+                view project</a
+              >
+            </div>
+          </div>
+          <div id="description1" class="flex-1 md:px-3 lg:mt-2">
             <h2 class="text-m leading-8 text-sageGreen">
               The Composer Crawler
             </h2>
@@ -283,37 +274,49 @@
               the Wiki API, and was transformed with a mixture of JavaScript and
               manual editing.
             </p>
-
-            <a
-              target="_blank"
-              href="https://github.com/KmSutula/The-Composer-Crawler"
-              class="text-greyPurple"
-              >See the code here!</a
-            >
-            <br /><a
-              target="_blank"
-              href="https://www.thecomposercrawler.com"
-              class="text-greyPurple"
-            >
-              Try it yourself!</a
-            >
+            <div class="proj-links-mobile">
+              <a
+                target="_blank"
+                href="https://github.com/KmSutula/The-Composer-Crawler"
+                class="link mobile-link"
+                >view code</a
+              >
+              <a
+                target="_blank"
+                href="https://www.thecomposercrawler.com"
+                class="link mobile-link"
+              >
+                view project</a
+              >
+            </div>
           </div>
         </div>
 
-        <div
-          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex xl:items-center xl:justify-items-center"
-        >
-          <!-- <a class="samplelink" href="www.kaleighsutula.com"><img src="../assets/kswebsite.png" class="sample" id="sample1"></a> -->
-          <a
-            class="w-full xl:w-1/2"
-            href="https://kmsutula.github.io/quiz-or-quit/"
-            target="_blank"
-            ><img
+        <div class="worksample">
+          <div class="media-links relative w-full flex-1 lg:px-3">
+            <img
               src="./assets/quiz-or-quit.png"
-              class="sample my-2 rounded-lg object-contain"
+              class="sample my-2 w-full rounded-lg object-contain"
               id="sample2"
-          /></a>
-          <div id="description2" class="lg:mt-2 lg:px-3 xl:w-1/2">
+              alt="Screenshot of Quiz or Quit project"
+            />
+            <div class="overlay">
+              <a
+                target="_blank"
+                href="https://github.com/KmSutula/quiz-or-quit"
+                class="link mb-2"
+                >view code</a
+              >
+              <a
+                target="_blank"
+                href="https://kmsutula.github.io/quiz-or-quit/"
+                class="link"
+              >
+                view project</a
+              >
+            </div>
+          </div>
+          <div id="description2" class="flex-1 md:px-3 lg:mt-2">
             <h2 class="text-m leading-8 text-sageGreen">Quiz or Quit?</h2>
             <small class="mb-2 text-greyPurple"
               >React - Framer Motion - API - JavaScript - HTML - CSS</small
@@ -326,35 +329,49 @@
               difficulty, and length. The design is modeled after your typical
               80s video game, full of bright colors and pixelated borders.
             </p>
-            <a
-              target="_blank"
-              href="https://github.com/KmSutula/quiz-or-quit"
-              class="text-greyPurple"
-              >See the code here!</a
-            ><br />
-            <a
-              target="_blank"
-              href="https://kmsutula.github.io/quiz-or-quit/"
-              class="text-greyPurple"
-              >Try it yourself!</a
-            >
+            <div class="proj-links-mobile">
+              <a
+                target="_blank"
+                href="https://github.com/KmSutula/quiz-or-quit"
+                class="link mobile-link"
+                >view code</a
+              >
+              <a
+                target="_blank"
+                href="https://kmsutula.github.io/quiz-or-quit/"
+                class="link mobile-link"
+              >
+                view project</a
+              >
+            </div>
           </div>
         </div>
 
-        <div
-          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex xl:items-center xl:justify-items-center"
-        >
-          <!-- <a class="samplelink" href="www.kaleighsutula.com"><img src="../assets/kswebsite.png" class="sample" id="sample1"></a> -->
-          <a
-            class="w-full xl:w-1/2"
-            href="https://kmsutula.github.io/YourWeatherNow/"
-            target="_blank"
-            ><img
+        <div class="worksample">
+          <div class="media-links relative w-full flex-1 xl:w-1/2">
+            <img
               src="./assets/yourweathernow.png"
-              class="sample my-2 rounded-lg object-contain"
-              id="sample2"
-          /></a>
-          <div id="description2" class="lg:mt-2 lg:px-3 xl:w-1/2">
+              class="sample my-2 w-full rounded-lg object-contain"
+              id="sample3"
+              alt="Screenshot of YourWeatherNow project"
+            />
+            <div class="overlay">
+              <a
+                target="_blank"
+                href="https://github.com/KmSutula/YourWeatherNow"
+                class="link mb-2"
+                >view code</a
+              >
+              <a
+                target="_blank"
+                href="https://kmsutula.github.io/YourWeatherNow/"
+                class="link"
+              >
+                view project</a
+              >
+            </div>
+          </div>
+          <div id="description3" class="flex-1 md:px-3 lg:mt-2">
             <h2 class="text-m leading-8 text-sageGreen">YourWeatherNow</h2>
             <small class="mb-2 text-greyPurple"
               >Angular - API - TypeScript - HTML - CSS
@@ -375,35 +392,49 @@
               lows, and humidity, as well as render a dynamic icon that visually
               represents the weather.
             </p>
-            <a
-              target="_blank"
-              href="https://github.com/KmSutula/YourWeatherNow"
-              class="text-greyPurple"
-              >See the code here!</a
-            ><br />
-            <a
-              target="_blank"
-              href="https://kmsutula.github.io/YourWeatherNow/"
-              class="text-greyPurple"
-              >Try it yourself!</a
-            >
+            <div class="proj-links-mobile">
+              <a
+                target="_blank"
+                href="https://github.com/KmSutula/YourWeatherNow"
+                class="link mobile-link"
+                >view code</a
+              >
+              <a
+                target="_blank"
+                href="https://kmsutula.github.io/YourWeatherNow/"
+                class="link mobile-link"
+              >
+                view project</a
+              >
+            </div>
           </div>
         </div>
 
-        <div
-          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex xl:items-center xl:justify-items-center"
-        >
-          <!-- <a class="samplelink" href="www.kaleighsutula.com"><img src="../assets/kswebsite.png" class="sample" id="sample1"></a> -->
-          <a
-            class="w-full xl:w-1/2"
-            href="https://codepen.io/ksutula/pen/abGYdVq"
-            target="_blank"
-            ><img
+        <div class="worksample">
+          <div class="media-links relative w-full flex-1">
+            <img
               src="./assets/calculator.png"
-              class="sample my-2 w-full rounded-lg"
-              id="sample3"
-          /></a>
-          <div id="description3" class="lg:mt-2 lg:px-3 xl:w-1/2">
+              class="sample my-2 w-full rounded-lg object-contain"
+              id="sample4"
+              alt="Screenshot of JavaScript calculator project"
+            />
+            <div class="overlay">
+              <a
+                target="_blank"
+                href="https://github.com/KmSutula/javascript-calculator"
+                class="link mb-2"
+                >view code</a
+              >
+              <a
+                target="_blank"
+                href="https://kmsutula.github.io/javascript-calculator/"
+                class="link"
+              >
+                view project</a
+              >
+            </div>
+          </div>
+          <div id="description4" class="flex-1 md:px-3 lg:mt-2">
             <h2 class="text-m leading-8 text-sageGreen">
               JavaScript Calculator
             </h2>
@@ -417,40 +448,54 @@
               Bootstrap buttons in a flexbox, the design is simple and
               functional.
             </p>
-            <a
-              target="_blank"
-              href="https://github.com/KmSutula/FrontEndLibrariesFCC/tree/main/calculator"
-              class="text-greyPurple"
-              >See the code here!</a
-            ><br />
-            <a
-              target="_blank"
-              href="https://codepen.io/ksutula/pen/abGYdVq"
-              class="text-greyPurple"
-              >Try it yourself!</a
-            >
+            <div class="proj-links-mobile">
+              <a
+                target="_blank"
+                href="https://github.com/KmSutula/javascript-calculator"
+                class="link mobile-link"
+                >view code</a
+              >
+              <a
+                target="_blank"
+                href="https://kmsutula.github.io/javascript-calculator/"
+                class="link mobile-link"
+              >
+                view project</a
+              >
+            </div>
           </div>
         </div>
 
-        <div
-          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex xl:items-center xl:justify-items-center"
-        >
-          <!-- <a class="samplelink" href="www.kaleighsutula.com"><img src="../assets/kswebsite.png" class="sample" id="sample1"></a> -->
-          <a
-            class="w-full xl:w-1/2"
-            href="https://github.com/KmSutula/kswebsite"
-            target="_blank"
-            ><img
+        <div class="worksample">
+          <div class="media-links relative w-full flex-1">
+            <img
               src="./assets/kswebsite.png"
               class="sample my-2 w-full rounded-lg object-contain"
-              id="sample4"
-          /></a>
-          <div id="description4" class="lg:mt-2 lg:px-3 xl:w-1/2">
+              id="sample5"
+              alt="Screenshot of Kaleigh Sutula personal website"
+            />
+            <div class="overlay">
+              <a
+                target="_blank"
+                href="https://github.com/KmSutula/kswebsite"
+                class="link mb-2"
+                >view code</a
+              >
+              <a
+                target="_blank"
+                href="https://www.kaleighsutula.com"
+                class="link"
+              >
+                view project</a
+              >
+            </div>
+          </div>
+          <div id="description5" class="flex-1 md:px-3 lg:mt-2">
             <h2 class="text-m leading-8 text-sageGreen">
               Personal Website / Portfolio
             </h2>
             <small class="mb-2 text-greyPurple"
-              >Tailwind - jQuery - HTML - CSS - Azure</small
+              >Tailwind - Azure - jQuery - HTML - CSS</small
             >
 
             <p>
@@ -461,58 +506,49 @@
               Features an interactive side navigation, mobile-first responsive
               layout, and a contact form powered by Azure functions.
             </p>
-            <a
-              target="_blank"
-              href="https://github.com/KmSutula/kswebsite"
-              class="text-greyPurple"
-              >See the code here!</a
-            >
+            <div class="proj-links-mobile">
+              <a
+                target="_blank"
+                href="https://github.com/KmSutula/kswebsite"
+                class="link mobile-link"
+                >view code</a
+              >
+              <a
+                target="_blank"
+                href="https://www.kaleighsutula.com"
+                class="link mobile-link"
+              >
+                view project</a
+              >
+            </div>
           </div>
         </div>
 
-        <div
-          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex xl:items-center xl:justify-items-center"
-        >
-          <a
-            class="w-full xl:w-1/2"
-            href="https://github.com/KmSutula/travel-journal"
-            target="_blank"
-            ><img
-              src="./assets/travelbookws.png"
-              class="sample my-2 w-full rounded-lg object-contain"
-              id="sample5"
-          /></a>
-          <div id="description5" class="lg:mt-2 lg:px-3 xl:w-1/2">
-            <h2 class="text-m leading-8 text-sageGreen">My Travel Book</h2>
-            <small class="mb-2 text-greyPurple">React - HTML - CSS</small>
-            <p>
-              A static React site, populated dynamically from a local data file.
-              This project uses flexbox and media queries to be responsive at
-              all sizes.
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/KmSutula/travel-journal"
-              class="text-greyPurple"
-              >See the code here!</a
-            >
-          </div>
-        </div>
-
-        <div
-          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex xl:items-center xl:justify-items-center"
-        >
-          <a
-            class="w-full xl:w-1/2"
-            href="https://github.com/KmSutula/post-it-spa"
-            target="_blank"
-          >
+        <div class="worksample">
+          <div class="media-links relative w-full flex-1">
             <img
               src="./assets/postit.png"
               class="sample my-2 w-full rounded-lg object-contain"
               id="sample6"
-          /></a>
-          <div id="description6" class="lg:mt-2 lg:px-3 xl:w-1/2">
+              alt="Screenshot of Post It and Close it project"
+            />
+            <div class="overlay">
+              <a
+                target="_blank"
+                href="https://github.com/KmSutula/post-it-spa"
+                class="link mb-2"
+                >view code</a
+              >
+              <a
+                target="_blank"
+                href="https://kmsutula.github.io/post-it-app/"
+                class="link"
+              >
+                view project</a
+              >
+            </div>
+          </div>
+          <div id="description6" class="flex-1 md:px-3 lg:mt-2">
             <h2 class="text-m leading-8 text-sageGreen">Post it & Close it</h2>
             <small class="mb-2 text-greyPurple">JavaScript - HTML - CSS</small>
             <p>
@@ -520,28 +556,49 @@
               as a stack of digital sticky notes, where you are able to save
               tasks related to errands, home, work, and cooking.
             </p>
-            <a
-              target="_blank"
-              href="https://github.com/KmSutula/post-it-spa"
-              class="text-greyPurple"
-              >See the code here!</a
-            >
+            <div class="proj-links-mobile">
+              <a
+                target="_blank"
+                href="https://github.com/KmSutula/post-it-spa"
+                class="link mobile-link"
+                >view code</a
+              >
+              <a
+                target="_blank"
+                href="https://kmsutula.github.io/post-it-app/"
+                class="link mobile-link"
+              >
+                view project</a
+              >
+            </div>
           </div>
         </div>
 
-        <div
-          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex xl:items-center xl:justify-items-center"
-        >
-          <a
-            class="w-full xl:w-1/2"
-            href="https://codepen.io/ksutula/pen/JjvrejO"
-            target="_blank"
-            ><img
+        <div class="worksample">
+          <div class="media-links relative w-full flex-1">
+            <img
               src="./assets/pomodoro.png"
               class="sample my-2 w-full rounded-lg object-contain"
               id="sample7"
-          /></a>
-          <div id="description7" class="lg:mt-2 lg:px-3 xl:w-1/2">
+              alt="Screenshot of Pomodoro Timer project"
+            />
+            <div class="overlay">
+              <a
+                target="_blank"
+                href="https://github.com/KmSutula/pomodoro-clock"
+                class="link"
+                >view code</a
+              >
+              <a
+                target="_blank"
+                href="https://kmsutula.github.io/pomodoro-clock/"
+                class="link"
+              >
+                view project</a
+              >
+            </div>
+          </div>
+          <div id="description7" class="flex-1 md:px-3 lg:mt-2">
             <h2 class="text-m leading-8 text-sageGreen">Pomodoro Timer App</h2>
             <small class="mb-2 text-greyPurple">jQuery - HTML - CSS</small>
 
@@ -554,56 +611,21 @@
               the end of each timed session. An effective way to study, and I
               use it myself!
             </p>
-            <a
-              target="_blank"
-              href="https://github.com/KmSutula/FrontEndLibrariesFCC/tree/main/sessionBreakClock"
-              class="text-greyPurple"
-              >See the code here!</a
-            ><br />
-            <a
-              target="_blank"
-              href="https://codepen.io/ksutula/pen/JjvrejO"
-              class="text-greyPurple"
-              >Try it yourself!</a
-            >
-          </div>
-        </div>
-
-        <div
-          class="worksample my-6 h-auto w-auto border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] hover:scale-105 xl:flex xl:items-center xl:justify-items-center"
-        >
-          <a
-            class="w-full xl:w-1/2"
-            href="https://codepen.io/ksutula/pen/NWYmdBp"
-            target="_blank"
-            ><img
-              src="./assets/quoteGenerator.png"
-              class="sample my-2 w-full rounded-lg object-contain"
-              id="sample8"
-          /></a>
-          <div id="description8" class="lg:mt-2 lg:px-3 xl:w-1/2">
-            <h2 class="text-m leading-8 text-sageGreen">Quote Generator</h2>
-            <small class="mb-2 text-greyPurple"
-              >API - JavaScript - HTML - CSS</small
-            >
-
-            <p>
-              This site uses vanilla JS, HTML and CSS to generate quotes
-              provided by the Quotable API. There is also functionality built in
-              to tweet any quotes you find particularly inspiring!
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/KmSutula/FrontEndLibrariesFCC/tree/main/quoteGenerator"
-              class="text-greyPurple"
-              >See the code here!</a
-            ><br />
-            <a
-              target="_blank"
-              href="https://codepen.io/ksutula/pen/NWYmdBp"
-              class="text-greyPurple"
-              >Try it yourself!</a
-            >
+            <div class="proj-links-mobile">
+              <a
+                target="_blank"
+                href="https://github.com/KmSutula/FrontEndLibrariesFCC/tree/main/sessionBreakClock"
+                class="link mobile-link"
+                >view code</a
+              >
+              <a
+                target="_blank"
+                href="https://codepen.io/ksutula/pen/JjvrejO"
+                class="link mobile-link"
+              >
+                view project</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -613,7 +635,7 @@
 
       <div
         id="experience-section"
-        class="fade relative -top-[90vh] ml-auto mt-6 flex w-[70%] flex-col px-3 pb-6 text-whitish opacity-0 lg:mx-auto lg:w-1/2"
+        class="main-section fade relative -top-[90vh] ml-auto mt-6 flex w-[70%] flex-col px-3 pb-6 text-whitish opacity-0 lg:mx-auto lg:w-1/2"
       >
         <h2
           class="relative mb-6 text-l font-bold uppercase leading-10 text-sageGreen transition-all ease-in-out after:absolute after:top-1/2 after:ml-2 after:h-[2px] after:w-1/4 after:bg-greyPurple after:content-[''] sm:text-xl"
@@ -658,6 +680,7 @@
               <li>React</li>
               <li>Redux</li>
               <li>Angular</li>
+              <li>Vue</li>
               <li>jQuery</li>
               <li>Tailwind</li>
               <li>Bootstrap</li>
@@ -678,8 +701,8 @@
               <li>Figma</li>
               <li>Adobe Photoshop</li>
               <li>Adobe Illustrator</li>
+              <li>Adobe XD</li>
               <li>Balsamiq</li>
-              <li>Adobe Illustrator</li>
             </ul>
           </div>
           <div>
@@ -704,7 +727,22 @@
         </h3>
 
         <ul class="flex flex-col">
-          <!-- <li class="my-4 border-b-2 border-greyPurple"> -->
+          <ul class="border-b-[1px] border-greyPurple">
+            <li>Udemy</li>
+
+            <li class="text-sageGreen sm:text-m">C# Basics for Beginners</li>
+            <li class="text-right text-sm uppercase">
+              <a
+                href="https://www.udemy.com/certificate/UC-b50890f3-ff5b-494f-a5cd-235d25df7172/"
+                target="_blank"
+                class="text-right text-greyPurple"
+                >(Certification)</a
+              >
+            </li>
+            <li class="mb-3 text-right text-sm uppercase">
+              Completed December '22
+            </li>
+          </ul>
           <ul class="border-b-[1px] border-greyPurple">
             <li>Udemy</li>
 
@@ -721,70 +759,6 @@
             </li>
             <li class="mb-3 text-right text-sm uppercase">
               Completed November '22
-            </li>
-          </ul>
-          <ul class="border-b-[1px] border-greyPurple">
-            <li class="mt-3">freeCodeCamp</li>
-            <li class="text-sageGreen sm:text-m">Responsive Web Design</li>
-            <li class="text-right text-sm uppercase">
-              <a
-                href="https://freecodecamp.org/certification/sutulip/responsive-web-design"
-                target="_blank"
-                class="text-right text-greyPurple"
-                >(Certification)</a
-              >
-            </li>
-            <li class="mb-3 text-right text-sm uppercase">
-              Completed July '22
-            </li>
-          </ul>
-          <ul class="border-b-[1px] border-greyPurple">
-            <li class="mt-3">freeCodeCamp</li>
-            <li class="text-sageGreen sm:text-m">
-              JavaScript Algorithims & Data Structures
-            </li>
-            <li class="text-right text-sm uppercase">
-              <a
-                href="https://freecodecamp.org/certification/sutulip/javascript-algorithms-and-data-structures"
-                target="_blank"
-                class="text-right text-greyPurple"
-                >(Certification)</a
-              >
-            </li>
-            <li class="mb-3 text-right text-sm uppercase">
-              Completed August '22
-            </li>
-          </ul>
-          <ul class="border-b-[1px] border-greyPurple">
-            <li class="mt-3">freeCodeCamp</li>
-            <li class="text-sageGreen sm:text-m">
-              Front End Development Libraries
-            </li>
-            <li class="text-right text-sm uppercase">
-              <a
-                href="https://www.freecodecamp.org/certification/sutulip/front-end-development-libraries"
-                target="_blank"
-                class="text-right text-greyPurple"
-                >(Certification)</a
-              >
-            </li>
-
-            <li class="mb-3 text-right text-sm uppercase">
-              Completed September '22
-            </li>
-          </ul>
-          <ul class="border-b-[1px] border-greyPurple">
-            <li class="mt-3">edX</li>
-            <li class="text-sageGreen sm:text-m">HTML5 & CSS Fundamentals</li>
-            <li class="mb-3 text-right text-sm uppercase">
-              Completed July '22
-            </li>
-          </ul>
-          <ul class="border-b-[1px] border-greyPurple">
-            <li class="mt-3">WesBos.com</li>
-            <li class="text-sageGreen sm:text-m">JavaScript30</li>
-            <li class="mb-3 text-right text-sm uppercase">
-              Completed September '22
             </li>
           </ul>
           <ul class="border-b-[1px] border-greyPurple">
@@ -809,10 +783,75 @@
               Completed October '22
             </li>
           </ul>
+          <ul class="border-b-[1px] border-greyPurple">
+            <li class="mt-3">WesBos.com</li>
+            <li class="text-sageGreen sm:text-m">JavaScript30</li>
+            <li class="mb-3 text-right text-sm uppercase">
+              Completed September '22
+            </li>
+          </ul>
+          <ul class="border-b-[1px] border-greyPurple">
+            <li class="mt-3">freeCodeCamp</li>
+            <li class="text-sageGreen sm:text-m">
+              Front End Development Libraries
+            </li>
+            <li class="text-right text-sm uppercase">
+              <a
+                href="https://www.freecodecamp.org/certification/sutulip/front-end-development-libraries"
+                target="_blank"
+                class="text-right text-greyPurple"
+                >(Certification)</a
+              >
+            </li>
+
+            <li class="mb-3 text-right text-sm uppercase">
+              Completed September '22
+            </li>
+          </ul>
+          <ul class="border-b-[1px] border-greyPurple">
+            <li class="mt-3">freeCodeCamp</li>
+            <li class="text-sageGreen sm:text-m">
+              JavaScript Algorithims & Data Structures
+            </li>
+            <li class="text-right text-sm uppercase">
+              <a
+                href="https://freecodecamp.org/certification/sutulip/javascript-algorithms-and-data-structures"
+                target="_blank"
+                class="text-right text-greyPurple"
+                >(Certification)</a
+              >
+            </li>
+            <li class="mb-3 text-right text-sm uppercase">
+              Completed August '22
+            </li>
+          </ul>
+          <ul class="border-b-[1px] border-greyPurple">
+            <li class="mt-3">freeCodeCamp</li>
+            <li class="text-sageGreen sm:text-m">Responsive Web Design</li>
+            <li class="text-right text-sm uppercase">
+              <a
+                href="https://freecodecamp.org/certification/sutulip/responsive-web-design"
+                target="_blank"
+                class="text-right text-greyPurple"
+                >(Certification)</a
+              >
+            </li>
+            <li class="mb-3 text-right text-sm uppercase">
+              Completed July '22
+            </li>
+          </ul>
+
+          <ul class="border-b-[1px] border-greyPurple">
+            <li class="mt-3">edX</li>
+            <li class="text-sageGreen sm:text-m">HTML5 & CSS Fundamentals</li>
+            <li class="mb-3 text-right text-sm uppercase">
+              Completed July '22
+            </li>
+          </ul>
         </ul>
         <a
           class="mx-auto"
-          href="/assets/KaleighSutula - Resume 1.pdf"
+          href="./assets/KaleighSutula - Resume 1 (1).pdf"
           target="_blank"
         >
           <button
@@ -828,7 +867,7 @@
 
       <div
         id="contact-section"
-        class="fade relative -top-[90vh] mt-6 ml-auto flex w-[70%] flex-col px-3 pb-6 text-whitish opacity-0 lg:mx-auto lg:w-3/5"
+        class="main-section fade relative -top-[90vh] mt-6 ml-auto flex w-[70%] flex-col px-3 pb-6 text-whitish opacity-0 lg:mx-auto lg:w-1/2"
       >
         <h2
           class="relative mb-2 text-l font-bold uppercase leading-10 text-sageGreen transition-all ease-in-out after:absolute after:top-1/2 after:ml-2 after:h-[2px] after:w-1/2 after:bg-greyPurple after:content-[''] sm:text-xl"
@@ -840,7 +879,7 @@
           or any other projects you need help with.
         </p>
         <form
-          class="mx-auto flex w-full flex-col transition-all ease-in-out md:w-[600px]"
+          class="mx-auto flex w-full flex-col transition-all ease-in-out md:w-[500px]"
           onsubmit="return false"
           id="contact-form"
         >
@@ -887,12 +926,7 @@
         </form>
       </div>
     </main>
-    <div
-      id="footer"
-      class="absolute right-0 bottom-0 p-2 text-m font-bold uppercase text-greyPurple opacity-0"
-    >
-      Thanks for stopping by! <i class="fa-regular fa-face-smile-beam"></i>
-    </div>
+
     <!-- </main> -->
 
     <script
@@ -900,6 +934,6 @@
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

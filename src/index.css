@@ -1,3 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .overlay {
+    @apply absolute top-0 hidden h-full w-full flex-col items-center justify-center rounded-lg bg-darkGrey bg-opacity-90 uppercase opacity-0 transition-opacity duration-1000 ease-in-out hover:opacity-100 lg:flex;
+  }
+  .proj-links-mobile {
+    @apply my-2 lg:hidden;
+  }
+  .link {
+    @apply border-b-2 border-sageGreen py-2 font-bold uppercase text-whitish hover:text-sageGreen;
+  }
+  .mobile-link {
+    @apply block max-w-fit  md:inline-block md:last-of-type:ml-3;
+  }
+  .worksample {
+    @apply my-6 mx-2 flex h-auto w-auto flex-col items-center justify-between gap-1 border-[1px] border-darkGrey p-3 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.3)] md:flex-row;
+  }
+}
+
 .quote-one.active {
   opacity: 1;
   transition: opacity 3s ease;
